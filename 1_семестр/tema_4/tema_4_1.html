@@ -1,0 +1,3906 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xml:lang="en" dir="ltr" lang="en-US">
+<head>
+
+
+
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  
+
+
+  
+  
+  
+  <title>Тема 4.1 Арифметические основы работы компьютера Системы счисления, решение задач
+</title>
+  <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+<!--[if IE 6]><link rel="stylesheet" href="../style.ie6.css" type="text/css" media="screen" /><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+
+
+  
+  
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+
+
+  
+  
+  <script type="text/javascript" src="../jquery.js"></script>
+  
+  
+  <script type="text/javascript" src="../script.js"></script>
+  
+  
+  <style type="text/css">
+
+  </style>
+
+  
+  
+  <meta charset="utf-8">
+
+
+  
+  
+  
+  
+  <style>
+  #topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
+  </style>
+  
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+  
+  
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+</head>
+
+
+<body>
+
+
+
+<div id="art-main">
+<div class="cleared reset-box"></div>
+
+
+
+<div class="art-header">
+<div class="art-header-position">
+<div class="art-header-wrapper">
+<div class="cleared reset-box"></div>
+
+
+
+<div class="art-header-inner">
+<div class="art-logo">
+<h1 class="art-logo-name"></h1>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="cleared reset-box"></div>
+
+
+
+<div class="art-bar art-nav">
+<div class="art-nav-outer">
+<div class="art-nav-wrapper">
+<div class="art-nav-inner">
+<ul class="art-hmenu">
+
+
+	
+	<li> <a href="../%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F.html">Главная</a>  </li>
+
+	<li> <a href="../tema_1.html">Тема 1</a> </li>
+
+	<li> <a href="../tema_2.html">Тема 2</a> </li>
+
+	<li> <a href="../tema_3.html">Тема 3</a>
+    
+    <ul>
+
+			<li> <a href="../tema_3/tema_3_1.html">Графический интерфейс ОС Windows</a> </li>
+
+			<li> <a href="../tema_3/tema_3_2.html">Работа с файловым менеджером Проводник</a> </li>
+
+    
+    </ul>
+
+  </li>
+
+ <li> <a href="../tema_4.html" class="active">Тема 4</a>
+    
+    <ul>
+
+      <li> <a href="../tema_4/tema_4_1.html" class="active">Арифметические основы работы компьютера</a>      </li>
+
+      <li> <a href="../tema_4/tema_4_2.html">Формы представления чисел</a></li>
+
+	  <li> <a href="../tema_4/tema_4_3.html">Действия с числами в позиционных системах счисления</a></li>
+
+      <li> <a href="../tema_4/tema_4_4.html">Системы счисления, решение задач для подготовки к ВПР</a></li>
+
+	  <li> <a href="../tema_4/tema_4_4.html">Представление и измерение информации</a></li>
+
+          <li> <a href="../tema_4/tema_4_5.html">Представление и измерение информации. Кодирование  информации. Алфавитный подход</a></li>
+     
+	  <li> <a href="../tema_4/tema_4_6.html">Представление и измерение графической информации</a></li>
+
+      <li> <a href="../tema_4/tema_4_7.html">Представление и измерение звуковой информации</a></li>
+
+      <li> <a href="../tema_4/tema_4_8.html">Двоичное кодирование. Адресация в сети Internet. Решение задач.</a></li>
+
+      <li> <a href="../tema_4/tema_4_9.html">Решение задач по теории игр. Выйграшная стратегия </a></li>
+
+	  <li> <a href="../tema_4/tema_4_10.html">Бинарное дерево: решение задач</a></li>
+
+    
+    </ul>
+
+  </li>
+
+		<li> <a href="../tema_5.html">Тема 5</a> </li>
+
+		<li> <a href="../tema_6.html">Тема 6</a>			 
+			 
+    <ul>
+
+						<li> <a href="../tema_6/tema_6_1.html">Логические операции</a> </li>
+
+						<li> <a href="../tema_6/tema_6_2.html">Построение таблиц истинности и логических схем</a> </li>
+
+						<li> <a href="../tema_6/tema_6_3.html">Решение задач табличным способом</a> </li>
+
+						<li> <a href="../tema_6/tema_6_4.html">Круги Эйлера-Венца</a> </li>
+
+						<li> <a href="../tema_6/tema_6_5.html">Основные законы Алгебры логики</a> </li>
+
+						<li> <a href="../tema_6/tema_6_6.html">Решение задач</a> </li>
+
+						<li> <a href="../tema_6/tema_6_7.html">Тригеры и сумматоры</a> </li>
+
+			 
+    </ul>
+
+		</li>
+
+		<li><a href="../tema_7.html">Тема 7</a>
+			 
+    <ul>
+
+						<li> <a href="../tema_7/tema_7_1.html"> Виды и типы компьютеров</a>
+								
+        <ul>
+
+									 <li> <a href="../tema_7/var7_1.html">Вариант 1</a> </li>
+
+									 <li> <a href="../tema_7/var7_2.html">Вариант 2</a> </li>
+
+									 <li> <a href="../tema_7/var7_3.html">Вариант 3</a> </li>
+
+									 <li> <a href="../tema_7/var7_4.html">Вариант 4</a> </li>
+
+									 <li> <a href="../tema_7/var7_5.html">Вариант 5</a> </li>
+
+								
+        </ul>
+
+						</li>
+
+						<li> <a href="../tema_7/tema_7_2.html">Внутренние устройства компьютера </a></li>
+
+						<li> <a href="../tema_7/tema_7_3.html">Периферийные устройства компьютера</a> </li>
+
+			 
+    </ul>
+
+		</li>
+
+		<li> <a href="../tema_8.html">Тема 8</a>
+			 
+    <ul>
+
+						<li> <a href="../tema_8/tema_8_1.html">Алгоритмы и способы их описания</a> </li>
+
+						<li> <a href="../tema_8/tema_8_2.html">Компьютерные модели различных процессов</a>
+								
+        <ul>
+
+									 <li> <a href="../tema_8/var1.html">Вариант 1</a> </li>
+
+									 <li> <a href="../tema_8/var2.html">Вариант 2</a> </li>
+
+									 <li> <a href="../tema_8/var3.html">Вариант 3</a> </li>
+
+									 <li> <a href="../tema_8/var4.html">Вариант 4</a> </li>
+
+									 <li> <a href="../tema_8/var5.html">Вариант 5</a> </li>
+
+								
+        </ul>
+
+						</li>
+
+						<li> <a href="../tema_8/tema_8_3.html">Реализация различных видов алгоритмов</a> </li>
+
+						<li> <a href="../tema_8/tema_8_4.html">Теория построения графов</a> </li>
+
+						<li> <a href="../tema_8/tema_8_5.html">Решение задач</a> </li>
+
+			 
+    </ul>
+
+		</li>
+
+		<li> <a href="../tema_9.html">Тема 9</a> </li>
+
+		<li> <a href="../control.html">Контроль</a>
+  </li>
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="cleared reset-box"></div>
+
+
+
+<div class="art-box art-sheet">
+<div class="art-box-body art-sheet-body">
+<div class="art-layout-wrapper">
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell art-content">
+<div class="art-box art-post">
+<div class="art-box-body art-post-body">
+<div class="art-post-inner art-article">
+<div class="art-postcontent">
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell layout-item-0" style="width: 1329px;">
+<h1 style="margin-bottom: 6px; background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; color: black;">Арифметические основы работы компьютера</span></h1>
+
+
+
+<h1 style="background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; color: black;">Системы счисления, решение задач</span></h1>
+
+
+
+<p style="background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; color: black;"><br>
+
+
+
+</span></p>
+
+
+
+<h3 style="background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; color: black;">Цели</span></h3>
+
+
+
+<ul style="background-color: rgb(255, 255, 255);">
+
+
+
+  <li><span style="font-family: Symbol; color: black;"><span style="font-size: 15px;"></span></span><span style="font-size: 15px;"> </span><span style="font-family: Arial,sans-serif; color: black;"><span style="font-size: 15px;">Обобщить знания учащихся по теме:
+Системы счисления</span></span></li>
+
+
+
+  <li><span style="font-family: Symbol; color: black;"><span style="font-size: 15px;"></span></span><span style="font-size: 15px;"> </span><span style="font-family: Arial,sans-serif; color: black;"><span style="font-size: 15px;">Разобрать приёмы перевода чисел из
+одной системы счисления в другую</span></span></li>
+
+
+
+  <li><span style="font-family: Symbol; color: black;"><span style="font-size: 15px;"></span></span><span style="font-size: 15px;"></span><span style="font-family: Arial,sans-serif; color: black;"><span style="font-size: 15px;">Формировать умения перевода числа
+из одной системы счисления в другую</span></span></li>
+
+
+
+</ul>
+
+
+
+<p style="background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; color: black;"><span style="font-size: 15px;">Инструменты:</span></span></p>
+
+
+
+<ul style="background-color: rgb(255, 255, 255);" type="disc">
+
+
+
+  <li class="MsoNormal" style="color: black;"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">ОС</span> <span class="SpellE"><span style="font-size: 15px;">Windows</span></span></span></li>
+
+
+
+  <li class="MsoNormal" style="color: black;"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">Браузер</span></span></li>
+
+
+
+  <li class="MsoNormal" style="color: black;"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">Калькулятор</span></span></li>
+
+
+
+</ul>
+
+
+
+<p style="background-color: rgb(255, 255, 255);"><span style="font-size: 15px;">&nbsp;</span></p>
+
+
+
+<p style="background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><span style="color: rgb(255, 0, 0);">Задание
+1</span>. Оформите конспект <span style="color: rgb(155, 100, 100);">используя навыки конспектирования </span>(сокращая слова)</span></b></p>
+
+
+
+<p class="MsoNormal" id="yui_3_17_2_1_1601371623664_636" style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"><big id="yui_3_17_2_1_1601371623664_635"><span id="yui_3_17_2_1_1601371623664_634" style="color: rgb(255, 0, 0);"><span id="yui_3_17_2_1_1601371623664_633" style="color: rgb(0, 0, 0);">Для
+автоматизации работы с данными, относящимися к различным типам, важно
+унифицировать их форму представления. Для этого обычно используется
+прием<span>&nbsp;</span><b id="yui_3_17_2_1_1601371623664_706">кодирования</b>, т. е. выражение данных<span>&nbsp;</span><b id="yui_3_17_2_1_1601371623664_770">одного</b><span>&nbsp;</span><b id="yui_3_17_2_1_1601371623664_875">типа</b><span>&nbsp;</span>через данные<span>&nbsp;</span><b id="yui_3_17_2_1_1601371623664_819">другого</b><span>&nbsp;</span><b id="yui_3_17_2_1_1601371623664_936">типа</b>.&nbsp;</span></span></big></p>
+
+<p class="MsoNormal" id="yui_3_17_2_1_1601371623664_636" style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"><big id="yui_3_17_2_1_1601371623664_961"><span id="yui_3_17_2_1_1601371623664_960" style="color: rgb(255, 0, 0);"><span id="yui_3_17_2_1_1601371623664_959" style="color: rgb(0, 0, 0);">Любые данные для хранения и обработки компьютером представляются последовательностью д<i id="yui_3_17_2_1_1601371623664_1236">вух целых чисел</i><span>&nbsp;</span>&ndash;<span>&nbsp;</span><i id="yui_3_17_2_1_1601371623664_1398">единицы</i><span>&nbsp;</span>и<span>&nbsp;</span><i id="yui_3_17_2_1_1601371623664_1502">нуля</i>. Такая форма представления данных получила название двоичного кодирования.</span></span></big></p>
+
+
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-bottom: 7.5pt; line-height: normal;"><span style="font-size: 12pt; font-family: &quot;Helvetica&quot;,&quot;sans-serif&quot;; color: black;">Наибольшее применение при вводе, обработке
+и выводе информации в компьютере и компьютерных системах нашли позиционные системы
+счисления, при этом самыми распространенными являются десятичная, двоичная,
+восьмеричная и шестнадцатеричная системы<o:p></o:p></span></p>
+
+
+<p style="background-color: rgb(255, 255, 255);" class="MsoNormal"><big><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">Запишите определение:</span></span></big></p>
+
+
+
+<p style="background-color: rgb(255, 255, 255);" class="MsoNormal"><big><span style="color: rgb(255, 0, 0);">Системой счисления </span><span style="color: rgb(0, 0, 0);">
+называется совокупность правил
+записи любых чисел ограниченным количеством символов, называемых
+цифрами, позволяющая установить взаимно однозначное соответствие между
+любым числом и его представлением и наименованием.</span></big></p>
+
+
+
+<p style="background-color: rgb(255, 255, 255);" class="MsoNormal"><img alt="" src="../images/Tema4_1_pozic_CC-001.jpg" style="border-width: 0px;" height="570" width="760"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><br>
+
+
+
+</span></b></p>
+
+
+
+<h4><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><span style="color: rgb(255, 0, 0);">Задание
+2</span>.</span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Заполните таблицу соответствия чисел между разными системами счисления</span></b></h4>
+
+
+
+<p></p>
+
+
+
+
+<table style="background-color: rgb(255, 255, 255);" class="MsoNormalTable" border="0" cellpadding="0" width="100%">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 0px; padding: 0.75pt;" class="">
+      
+      
+      <table style="width: 650.2px;" class="MsoNormalTable" border="1" cellpadding="0" cellspacing="0">
+
+
+
+        <tbody>
+
+
+
+          <tr align="center">
+
+
+
+            <td style="width: 117px;" rowspan="1" colspan="6" valign="undefined"><big><big><big>&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Соответствие цифр некоторых систем счисления</big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 58.3pt;">
+
+
+
+            <td style="text-align: center; vertical-align: middle; width: 117px;" colspan="1" rowspan="19"><big><big><big><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 159, 255);">Голубые </span><br>
+
+
+
+ячейки<br>
+
+
+
+&nbsp;- цифры<br>
+
+
+
+&nbsp;системы <br>
+
+
+
+счисления,<br>
+
+
+
+&nbsp;желтые<br>
+
+
+
+&nbsp;- числа</span></big></big></big></td>
+
+
+
+            <td style="border-color: windowtext; border-width: 1pt; padding: 3.6pt 7.2pt; height: 58.3pt; text-align: center; width: 120px;"><big><big><big>
+            <span style="font-family: Arial,sans-serif; color: black;">Десятичная</span>
+            <br>
+
+
+
+            <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">X</span><sub><span style="font-family: Arial,sans-serif; color: black;">10</span></sub>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-left-style: none; height: 58.3pt; width: 72px; text-align: center;"><big><big><big>
+            <span style="font-family: Arial,sans-serif; color: black;">Двоичная</span>
+            <br>
+
+
+
+            <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">X</span><sub><span style="font-family: Arial,sans-serif; color: black;">2</span></sub>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-left-style: none; height: 58.3pt; width: 139px; text-align: center;"><big><big><big>
+            <span style="font-family: Arial,sans-serif; color: black;">Восьмеричная</span>
+            <br>
+
+
+
+            <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">X</span><sub><span style="font-family: Arial,sans-serif; color: black;">8</span></sub>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-left-style: none; height: 58.3pt; width: 160px; text-align: center;"><big><big><big>
+            <span style="font-family: Arial,sans-serif; color: black;">Шестнадцатеричная</span>
+            <br>
+
+
+
+            <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">X</span><sub><span style="font-family: Arial,sans-serif; color: black;">16</span></sub>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; border-left-style: none; height: 58.3pt; width: 101px; text-align: center;"><big><big><big>
+            <span style="font-family: Arial,sans-serif; color: black;">Римская</span>
+            </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">0</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">0</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">0</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">0</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">1</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">1</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">1</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">1</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">I</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">2</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">10</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">2</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">2</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">II</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">3</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">11</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">3</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">3</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">III</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">4</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">100</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">4</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">4</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">IV</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">5</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">101</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">5</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">5</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">V</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">6</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">110</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">6</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">6</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">7</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">111</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">7</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">7</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">8</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">10</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">8</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; text-align: center; width: 120px; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">9</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">9</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">10</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">A</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big><span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">Х</span></big></big></big></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">11</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">B</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">12</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">C</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">13</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">D</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">14</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">E</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">15</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; text-align: center; background-color: rgb(100, 180, 255);" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">F</span> </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">16</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""></td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 11.35pt;">
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-right-width: 1pt; border-bottom-width: 1pt; border-left-width: 1pt; border-top-style: none; height: 11.35pt; background-color: rgb(255, 255, 204); text-align: center; width: 120px;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">17</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 72px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">10001</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 139px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">21</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 160px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;">11</span>
+            </big></big></big></td>
+
+
+
+            <td style="padding: 3.6pt 7.2pt; border-top-style: none; border-left-style: none; border-bottom-color: windowtext; border-bottom-width: 1pt; border-right-color: windowtext; border-right-width: 1pt; height: 11.35pt; width: 101px; background-color: rgb(255, 255, 204); text-align: center;" class=""><big><big><big> <span style="font-family: Arial,sans-serif; color: black;" xml:lang="EN-US" lang="EN-US">XVII</span> </big></big></big></td>
+
+
+
+          </tr>
+
+
+
+        
+        
+        </tbody>
+      
+      
+      </table>
+
+
+
+      
+      
+      <h2></h2>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 0px; padding: 0.75pt;" class="">
+      
+      
+      <h2 style="text-indent: 47.7pt;"><span style="font-family: Arial,sans-serif; color: black;"></span></h2>
+
+
+
+      
+      
+      <h2 style="text-indent: 47.7pt;"><a href="./%d0%bb%d0%bf%d0%b7-4.html#_%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0_%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB"><span style="font-size: 16px; cursor: text;"><span style="font-family: Arial;"><span style="font-style: italic;"><span style="font-weight: normal;"></span></span></span></span></a><span style="font-family: Arial,sans-serif; color: black;"></span></h2>
+
+
+
+      
+      
+      <p style="text-indent: 63px;"><a href="./tema_4_1.html#_%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F%20%D1%87%D0%B8%D1%81%D0%B5%D0%BB%20%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%20%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%BC%D0%B8%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D0%BC%D0%B8%20%D1%81%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F"><span><span style="font-family: Arial;"><span style="font-style: italic;"><span style="font-size: 18px;">Проверь
+правильность заполнения таблицы</span></span></span></span></a><span style="font-family: Arial; font-size: 16px; font-style: italic;"><br>
+
+
+
+      </span></p>
+
+
+
+      
+      
+      <h2 style="text-align: justify;"></h2>
+
+
+
+      
+      
+      <p>&nbsp;&nbsp;</p>
+
+
+
+      
+      
+      <h2><a name="_Задание_100"></a><span style="font-family: Arial,sans-serif; color: black;"></span></h2>
+
+
+
+
+      
+      
+      <p><b>&nbsp;</b></p>
+
+
+
+      
+      
+      <p><b><span style="font-size: 26pt; font-family: Arial,sans-serif; color: black;">Перевод чисел из десятичной системы счисления</span></b></p>
+
+
+
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><span style="color: rgb(255, 0, 0);">Задание
+3</span></span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Переведите в двоичную, восьмеричную и шестнадцатеричную СС целые и дробные числа (по вариантам)</span></b></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+
+      
+<table style="background-color: rgb(255, 255, 255); width: 80%; height: 134px; color: rgb(67, 29, 255);" class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
+
+
+
+        <tbody>
+
+
+
+          <tr>
+
+
+
+            <td>
+            
+      
+      <div style="text-align: left;"> </div>
+
+
+
+            
+      
+      <p style="text-align: left;" class="MsoNormal"><b><span style="font-size: 18pt;">1 вариант</span><span style="font-size: 14px; color: black;"> номер по журналу 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34</span></b></p>
+
+
+
+            
+      
+      <p style="text-align: left;" class="MsoNormal"><b><span style="font-size: 18pt;">2 вариант </span><span style="font-size: 14px; color: black;">номер по журналу 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35
+ </span></b>
+
+            </p>
+
+      
+      <p style="text-align: left;" class="MsoNormal"><b><span style="font-size: 18pt;">3 вариант    </span><span style="font-size: 14px; color: black;">номер по журналу 3, 6, 9, 12, 15, 18, 21, 24, 27, 30,	33,	36
+      </span></b></p>
+
+
+
+
+
+ 
+            </td>
+
+
+
+          </tr>
+
+
+
+        
+  
+  </tbody>
+      
+</table>
+
+
+
+
+
+
+<table class="art-article" style="width: 80%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%; background-color: rgb(255, 255, 255);">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt; background-color: rgb(255, 255, 255);"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">1.1) В двоичную</span></b></p>
+
+
+
+      
+      <table style="background-color: rgb(255, 255, 255); width: 354px; height: 134px; color: rgb(67, 29, 255);" class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
+
+        <tbody>
+
+          <tr style="height: 53.2pt;">
+
+            <td style="border-color: white; border-width: 1pt 1pt 3pt; padding: 1.5pt 5.4pt 0cm; height: 53.2pt; width: 15%;" valign="top" width="330">
+                        
+            <div style="text-align: left;"> </div>
+
+          
+            
+            <p style="text-align: left;" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+165</span></span></b><span style="font-size: 32pt;"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+         
+            
+            <p class="MsoNormal" style="text-align: left;"><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b><span style="font-size: 32pt;"><span style="font-size: 40px;">185</span></span></b><span style="font-size: 32pt;"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+           
+            
+            <p class="MsoNormal" style="text-align: left;"><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+            </span></b></small></small></small><b><span style="font-size: 32pt;"><span style="font-size: 40px;">175</span></span></b><span style="font-size: 32pt;"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+            </td>
+
+          </tr>
+
+        
+        </tbody>
+      
+      </table>
+
+      <br style="background-color: rgb(255, 255, 255);">
+
+
+
+      <big style="background-color: rgb(7, 10, 7);"><span style="background-color: rgb(255, 255, 255); color: rgb(67, 29, 255);">Перевод целого числа из 10-ой С.С. в другие выполняется последовательным
+делением его на основание новой С.С. до тех пор, пока частное не станет меньше основания новой С.С. </span><br style="background-color: rgb(255, 255, 255); color: rgb(67, 29, 255);">
+
+
+
+      <br style="background-color: rgb(255, 255, 255); color: rgb(67, 29, 255);">
+
+
+
+      <span style="background-color: rgb(255, 255, 255); color: rgb(67, 29, 255);">Число в новой С.С. записывается в виде последовательности остатков деления, начиная с последнего.</span><br style="color: rgb(255, 255, 255);">
+
+
+
+      </big><br>
+
+
+
+      </td>
+
+
+
+      <td><img style="border: 0px solid ; width: 315px; height: 255px;" alt="tema4_1_10v2.jpg" title="tema4_1_10v2.jpg" src="../images//tema4_1_10v2.jpg"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image008.gif" style="border-width: 0px;" height="512" width="640"></td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">2.2)
+В
+восьмеричную</span></b></p>
+
+
+
+      
+      
+      <p></p>
+
+
+
+      <br>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">165</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">185</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      </span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">175</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      <br>
+
+
+
+      <br>
+
+
+
+      </td>
+
+
+
+      <td><img style="border: 0px solid ; width: 315px; height: 251px;" alt="Перевод 10 в 8 сс" title="Перевод 10 в 8 сс" src="../images//tema4_1_10v8.jpg"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image045.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">3.3) В шестнадцатеричную</span></b></p>
+
+
+
+      
+      
+      <p>&nbsp;</p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">165</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">185</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      </span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">175</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      <br>
+
+
+
+      </td>
+
+
+
+      <td><img style="border: 0px solid ; width: 273px; height: 269px;" alt="Перевод 10 в 16 сс" title="Перевод 10 в 16 сс" src="../images/tema4_1_10v16.jpg"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image046.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%;">
+      
+      
+      <p><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">4.4)В двоичную <small><small>(точность 4 знака после запятой)</small></small></span></b></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small><span style="color: rgb(67, 29, 255);"> </span></span></span></b><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,115</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,186</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      </span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,165</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      <big style="color: rgb(67, 29, 255);"><big>Дробная часть переводится умножением на основание новой СС.<br>
+
+После умножения целая часть результата ЗАПОМИНАЕТСЯ, а <span style="color: rgb(228, 57, 228);">дробная</span>
+&ndash; УМНОЖАЕТСЯ дальше.<br>
+
+
+
+      <br>
+
+
+
+      <br>
+
+
+
+      </big></big></td>
+
+
+
+      <td><big style="color: rgb(67, 29, 255);"><big>Умножение
+производится до тех пор, пока дробная часть не станет равной нулю или
+не будет достигнута заданная точность (в нашем случае
+&ndash; <big style="font-style: italic;"><span style="font-weight: bold;">4</span></big> знака после запятой).<br>
+
+
+
+      <br>
+
+
+
+      </big></big><img style="border: 0px solid ; width: 200px; height: 367px;" alt="Перевод десятичного числа после запятой в 2 сс" title="Перевод десятичного числа после запятой в 2 сс" src="../images/tema4_1_10v2_zap_1.jpg"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image037.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">5.5)
+В восьмеричную&nbsp;</span></b><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><small><small>(точность 4 знака после запятой)</small></small></span></b></p>
+
+
+
+      
+      
+      <p>&nbsp;</p>
+
+
+
+      <big style="color: rgb(67, 29, 255);"><big><br>
+
+
+
+      </big></big>
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small><span style="color: rgb(67, 29, 255);"> </span></span></span></b><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,115</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,186</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      </span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,165</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></p>
+
+
+
+      <big style="color: rgb(67, 29, 255);"><big> </big></big></td>
+
+
+
+      <td><big style="color: rgb(67, 29, 255);"><big>Умножение
+производится до тех пор, пока дробная часть не станет равной нулю или
+не будет достигнута заданная точность (в нашем случае &ndash;&nbsp;<big><span style="font-weight: bold; font-style: italic;">2</span></big>
+знака после запятой).<br>
+
+
+
+      <br>
+
+
+
+      </big></big><img style="border: 0px solid ; width: 180px; height: 268px;" alt="Перевод десятичного числа после запятой в 8 сс" title="Перевод десятичного числа после запятой в 8 сс" src="file:///D:/123/1_semestr/1_semestr/images/tema4_1_10v8_zap_1.jpg"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image034.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 1px; width: 15%;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">6.6)
+В шестнадцатеричную&nbsp;</span></b><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><small><small>(точность 4 знака после запятой)</small></small></span></b></p>
+
+
+
+      <br>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small><span style="color: rgb(67, 29, 255);"></span></span></span></b><small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">
+0,115</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></small></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><small><b><span style="font-size: 32pt;"><small><small style="color: rgb(0, 0, 0);">2 вариант</small> </small></span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,186</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></small></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><small><small><small><small><b><span style="font-size: 32pt;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      </span></b></small></small></small><b style="color: rgb(67, 29, 255);"><span style="font-size: 32pt;"><span style="font-size: 40px;">0,165</span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">10</span></span></sub></span></small></p>
+
+
+
+      <small><br>
+
+
+
+      </small></td>
+
+
+
+      <td><big style="color: rgb(67, 29, 255);"><big>Умножение
+производится до тех пор, пока дробная часть не станет равной нулю или
+не будет достигнута заданная точность (в нашем случае &ndash; <big><span style="font-weight: bold; font-style: italic;">1</span></big>
+знак после запятой).<br>
+
+
+
+      <br>
+
+
+
+      </big></big><img alt="Перевод десятичного числа после запятой в 16 сс" title="Перевод десятичного числа после запятой в 16 сс" src="../images/tema4_1_10v16_zap_1.jpg" style="border-width: 0px; width: 183px; height: 260px;"></td>
+
+
+
+      <td style="border-width: 1px;"><img alt="" src="../images/image003.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p><a href="#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F"><span><span style="font-family: Arial;"><span style="font-style: italic;"><span style="font-size: 18px;">Проверь
+правильность ответов</span></span></span></span></a><span class="MsoHyperlink"><b><span style="font-size: 14pt;"></span></b></span><span style="font-weight: bold;"><br>
+
+
+
+</span></p>
+
+
+
+<p><span class="MsoHyperlink"><b><br>
+
+
+
+</b></span></p>
+
+
+
+<h2><a name="_Задание_101"></a><span style="font-family: Arial,sans-serif; color: black;"></span></h2>
+
+
+
+<p><b><span style="font-size: 26pt; font-family: Arial,sans-serif; color: black;"><br>
+
+
+
+</span></b></p>
+
+
+
+<p><b><span style="font-size: 26pt; font-family: Arial,sans-serif; color: black;">Перевод чисел в десятичную систему счисления&nbsp;</span></b></p>
+
+
+
+<p style="text-indent: 600pt;"><span style="font-size: 14pt; font-family: Arial,sans-serif; color: blue;"> Таблица&nbsp;степеней чисел 2, 8, 16</span><span class="MsoHyperlink"><b>
+</b></span></p>
+
+
+
+<p style="width: 1371px;"><img alt="" src="../images/tema4.1_razvern_zap_.jpg" style="border-width: 0px;" height="506" width="666">&nbsp;<span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">&nbsp;<img alt="Таблица степеней чисел" src="../images/tema4.1_tabl_stepen.jpg" style="border-width: 0px;" height="678" width="577"></span><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"></span></b><b><span style="font-size: 26pt; font-family: Arial,sans-serif; color: black;">
+</span></b></p>
+
+
+
+<p style="margin: 5pt 189.25pt 5pt 38.75pt;"><span style="font-family: Arial,sans-serif; font-size: 24pt;">Для
+перевода числа из любой С.С. в 10-ую, его представляют в <i><span style="color: blue;">развернутом виде</span></i>
+и считают результат.</span></p>
+
+
+
+<p>&nbsp;</p>
+
+
+
+
+<p style="margin-right: 77.65pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><a name="Задание_4"></a><span style="color: rgb(255, 0, 0);">Задание 4</span>.</span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Переведите
+числа в десятичную систему счисления</span></b></p>
+
+
+
+<table class="art-article" style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">1.7)
+В
+десятичную</span></b></p>
+
+      
+      <p>&nbsp;</p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">100101010.1111</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">11111010.0101</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">1000011011.01</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><br>
+
+      </p>
+
+      <br>
+
+      </td>
+
+      <td colspan="1" rowspan="1"><br>
+
+      </td>
+
+      <td align="center" valign="middle"><img alt="" src="../images/image006.gif" style="border-width: 0px;" height="512" width="640"></td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="3" rowspan="1"><img alt="двоичная в десятичную" src="../images/tema4_1_2v10.jpg" style="border-width: 0px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="2" rowspan="1">
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">2.8)
+В
+десятичную</span></b></p>
+
+      
+      <p>&nbsp;</p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>&nbsp;<span style="color: rgb(67, 29, 255);">555.5</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">641.3</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">252.5</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><br>
+
+      </p>
+
+      <br>
+
+      <br>
+
+      </td>
+
+      <td><img alt="" src="../images/image031.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="3" rowspan="1" align="center" valign="middle"><img alt="tema4_1_8v10.jpg" src="../images/tema4_1_8v10.jpg" style="border-width: 0px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="2" rowspan="1">
+      
+      <p><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">3.9)
+В
+десятичную</span></b><br>
+
+&nbsp;</p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">1C1.3</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">2B3.5</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">3A1.2</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><br>
+
+      </p>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      
+      <div style="text-align: center;"><br>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      </div>
+
+      
+      <div style="text-align: center;"><br>
+
+      <br>
+
+      <br>
+
+      </div>
+
+      </td>
+
+      <td><img alt="" src="../images/image033.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="3" rowspan="1" align="center" valign="middle"><img alt="tema4_1_16v10_2" src="../images/tema4_1_16v10_2.jpg" style="border-width: 0px;"></td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+
+
+
+<p><a href="#%D0%9A_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E_4"><span><span style="font-family: Arial;"><span style="font-style: italic;"><span style="font-size: 18px;">Проверь
+правильность ответов</span></span></span></span></a><b>&nbsp;</b></p>
+
+
+
+<h2><span style="font-family: Arial,sans-serif; color: black;"></span></h2>
+
+
+
+<p style="margin-right: 193.55pt;"><b><span style="font-size: 26pt; font-family: Arial,sans-serif; color: black;"><br>
+
+
+
+</span></b></p>
+
+
+
+<p style="margin-left: 0pt; text-indent: 0pt;"><b><span style="font-family: Arial,sans-serif; color: black;"><span style="font-size: 35px;">Перевод чисел из восьмеричной и
+шестнадцатеричной в двоичную систему счисления и наоборот</span></span></b></p>
+
+
+
+<p style="margin-right: 77.65pt;"></p>
+
+
+
+<p><b>&nbsp;</b></p>
+
+
+
+<p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;"><a name="Задание_5"></a><span style="color: rgb(255, 0, 0);">Задание
+5</span>.</span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Переведите числа из восьмеричной и шестнадцатеричной в двоичную систему счисления и наоборот</span></b></p>
+
+
+
+<table class="art-article" style="background-color: rgb(255, 255, 255); width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td style="width: 316px;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">1.10)
+В двоичную</span></b></p>
+
+
+
+      
+      
+      <p>&nbsp;</p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">452.74</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">372.24</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">1033.2</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span><br>
+
+
+
+      </p>
+
+
+
+      <img alt="" src="../images/image007.png" style="border-width: 0px;" height="208" width="155"><br>
+
+
+
+      </td>
+
+
+
+      <td style="text-align: center; width: 284px;" valign="undefined"><big><big><big><span style="color: rgb(67, 29, 255);">Для перевода восьмеричного
+числа в двоичное необходимо каждую цифру заменить эквивалентной ей двоичной триадой.</span></big></big></big>
+
+      <img alt="" src="../images/Tema4_1_8v2_01.jpg" style="border-width: 0px;">
+      </td>
+
+
+
+      <td style="width: 671px;"><img alt="" src="../images/image011-2-2-2.png" style="border-width: 0px;" height="430" width="622"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="width: 316px;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">2.11) В восьмеричную</span></b></p>
+
+
+
+      
+      
+      <p></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">100101010.1111</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">11111010.0101</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">1000011011.01</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><br>
+
+
+
+      </p>
+
+
+
+      <br>
+
+
+
+      </td>
+
+
+
+      <td style="width: 284px; text-align: center;" valign="undefined"><big><big><big><span style="color: rgb(67, 29, 255);">Для перевода двоичного
+числа в восьмиричное, необходимо каждую цифру заменить эквивалентной ей двоичной триадой;<br>
+
+
+
+&nbsp;- <span style="font-style: italic;">по три цифры справа налево от <span style="font-weight: bold;">запятой</span></span> и слева направо&nbsp;после <span style="font-weight: bold;">запятой</span></span></big></big></big>
+
+      <img style="border: 0px solid ; width: 485px; height: 345px;" alt="ПЕРЕВОД 2 в 16" src="../images/Tema4_1_2v8_01.jpg">
+      </td>
+
+
+
+
+	 <td style="width: 671px;"><img alt="" src="../images/image017.gif" style="border-width: 0px;" height="512" width="640"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="width: 316px;">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">3.12) В двоичную</span></b></p>
+
+
+
+      
+      
+      <p>&nbsp;</p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">12A.F</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">21B.4</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">FA.5</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+
+
+      <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><img alt="" src="../images/image018.png" style="border-width: 0px;" height="375" width="157"><br>
+
+
+
+      </td>
+
+
+
+      <td style="width: 284px; text-align: center;" valign="undefined"><span style="color: rgb(29, 76, 255);"><big><big>Для перевода шестнадцатеричного числа в двоичное необходимо каждую цифру
+заменить эквивалентной ей двоичной тетрадой. <br>
+
+
+
+
+
+ <span style="color: rgb(200, 76, 255);"><b>Дописав</b></span> нули в <span style="color: rgb(200, 76, 255);"><b> конце</b></span> ЧИСЛА или <span style="color: rgb(200, 76, 255);"><b> в начале</b></span>, что бы получилось 4 цифры<br>
+Еще один способ перевода. <a href="%D1%EA%EE%EB%FC%EA%EE%20%E7%ED%E0%F7%E0%F9%E8%F5%20%ED%F3%EB%E5%E9%20%E2%20%E4%E2%EE%E8%F7%ED%EE%E9%20%E7%E0%EF%E8%F1%E8%20%F8%E5%F1%F2%ED%E0%E4%F6%E0%F2%E5%F0%E8%F7%ED%EE%E3%EE%20%F7%E8%F1%EB%E0%2046E0_.mp4" target="_blank">Смотреть видео</a>.</big></big></span></td>
+
+
+
+
+
+      <td style="width: 671px;"><img alt="" src="../images/image022-2-2-2-2.png" style="border-width: 0px;" height="467" width="622"><br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td style="width: 316px;" align="undefined" valign="undefined">
+      
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">4.13)
+В шестнадцатиричную</span></b></p>
+
+
+
+      
+      
+      <p style="width: 282px;"></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">10100100.1111</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2&nbsp;вариант</small></small>
+      <span style="color: rgb(67, 29, 255);"></span></span></span></b></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><span style="color: rgb(67, 29, 255);">11000011.0111</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small></span></span></b></p>
+
+
+
+      
+      
+      <p style="text-align: left; background-color: rgb(255, 255, 255);" class="MsoNormal"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"> <span style="color: rgb(67, 29, 255);">11100100.1101</span></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">2</span></span></sub></span><b><span style="font-size: 32pt;"><span style="font-size: 40px;"></span></span></b><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><br>
+
+
+
+      </p>
+
+
+
+      </td>
+
+
+
+      <td style="width: 284px; text-align: center;" valign="undefined"><big><big><span style="color: rgb(29, 76, 255);">Чтобы
+перевести число из
+двоичной системы в шестнадцатеричную, его нужно разбить на тетрады
+(четверки цифр), начиная с младшего разряда, в случае необходимости
+дополнив старшую тетраду нулями, и каждую тетраду заменить
+соответствующей шестнадцатиричной цифрой<br>
+
+
+
+
+
+      </span></big></big><big><big><big><span style="color: rgb(67, 29, 255);"> <span style="font-style: italic;">по четыре цифры справа налево от  <span style="font-weight: bold;">запятой</span></span>
+и слева направо&nbsp;после <span style="font-weight: bold;">запятой</span></span></big></big></big>
+
+
+      <img style="border: 0px solid ; width: 566px; height: 315px;" alt="ПЕРЕВОД 2 в 16" src="../images/Tema4_1_2v16_01.jpg">
+      </td>
+
+
+
+      <td style="width: 671px;" align="undefined" valign="undefined"><img style="border: 0px solid ; width: 640px; height: 512px;" alt="ПЕРЕВОД" src="../images/image024.gif"></td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td align="undefined" valign="undefined">
+      
+      
+      <p style="width: 282px;"></p>
+
+
+
+   
+            
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;"></span></span></sub></span><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">6.14)
+В восьмиричную</span></b></p>
+
+
+    
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">A4E,5F</span></span></span>
+	  </b>
+	  <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">C5A.D7</span></span></span></b>
+
+       <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span></p>
+
+
+
+
+
+       
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+
+      <span style="color: rgb(67, 29, 255);">4F1.FB</span></span></span></b>
+	  <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">16</span></span></sub></span>
+	  
+         </p>
+
+      
+      <p style="margin-left: 102.55pt; text-indent: -102.55pt;"><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">5.15) В шестнадцатиричную</span></b></p>
+
+
+    
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>1 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">237.65</span></span></span>
+	  </b>
+	  <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+
+
+      
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>2 вариант</small></small>
+      <span style="color: rgb(67, 29, 255);">361.74</span></span></span></b>
+
+       <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span></p>
+
+
+
+
+
+       
+      
+      <p class="MsoNormal" style="text-align: left; background-color: rgb(255, 255, 255);"><b><span style="font-size: 32pt;"><span style="font-size: 40px;"><small style="color: rgb(0, 0, 0);"><small>3 вариант</small></small>
+
+      <span style="color: rgb(67, 29, 255);">451.02</span></span></span></b>
+	  <span style="font-size: 32pt; color: rgb(67, 29, 255);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 33px;">8</span></span></sub></span>
+	  
+	  
+
+            </p>
+
+      
+      <p style="width: 282px;"></p>
+
+
+
+
+
+            
+
+          
+      
+      <p></p>
+
+      
+      <p></p>
+
+
+
+        
+      
+      <table class="art-article" style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+        <tbody>
+
+
+
+          <tr>
+
+
+         
+        
+
+            </tr>
+
+        
+        </tbody>
+      
+      
+      </table>
+
+
+
+      </td>
+
+
+
+      <td style="text-align: center; background-color: rgb(255, 255, 255); color: rgb(29, 76, 255);"><big><big>При переходе из восьмеричной системы счисления в шестнадцатеричную и обратно, необходим
+промежуточный перевод чисел в двоичную систему.</big></big> <br>
+
+ <span style="font-size: 14pt; font-family: Arial,sans-serif; color: green;">Числа при переводе буруться по три цифры, например 2 будет в двоичной системе счисления 010</span></td>
+
+
+
+      <td align="undefined" valign="undefined">
+      
+      
+      <p class="стиль2" style="font-size: medium; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 160); font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 26.6667px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" align="justify"><b style="font-weight: 800;">Пример
+1.<span>&nbsp;</span></b>Число<span>&nbsp;</span><img src="../images/Tema4_1_16v8_01.jpg" style="border-width: 0px;" align="middle" height="37" width="107"><span>&nbsp;</span>перевести в восьмеричную систему счисления.</p>
+
+
+
+   
+      
+      <p class="стиль2" style="font-size: medium; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 160); font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 26.6667px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" align="justify"><img src="../images/Tema4_1_16v8_02.jpg" style="border-width: 0px;" height="64" width="493"></p>
+
+
+
+      
+      
+      <p class="стиль2" style="font-size: medium; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 160); font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 26.6667px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" align="justify"><b style="font-weight: 800;">Пример
+2.<span>&nbsp;</span></b>Число<span>&nbsp;</span><img src="../images/Tema4_1_8v16_01.jpg" style="border-width: 0px;" align="middle"><span>&nbsp;</span>перевести
+в шестнадцатеричную систему счисления.</p>
+
+
+
+      
+      
+      <p style="color: rgb(0, 0, 160); font-family: verdana,arial; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 26.6667px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" align="justify"><span class="стиль2" style="font-size: medium; font-family: Verdana,Arial,Helvetica,sans-serif;"><img src="../images/Tema4_1_8v16_02.jpg" style="border-width: 0px;" height="74" width="350"></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p><a href="#%D0%9A_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E_5"><span><span style="font-family: Arial;"><span style="font-style: italic;"><span style="font-size: 18px;">Проверь
+правильность ответов</span></span></span></span></a><b>&nbsp;</b></p>
+
+
+
+<p></p>
+
+
+
+<b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: red;">Задание 6.</span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Дополнительное
+задание. Выполните самостоятельную работу</span></b>&nbsp;
+<p></p>
+
+
+
+<p><span style="font-weight: bold;"></span><small><span style="font-size: 26pt; color: rgb(67, 29, 255);"><span style="position: relative; top: 8pt;"><span style="font-size: 26px;"></span></span></span></small></p>
+
+
+
+<big><big><span style="font-family: Arial; color: rgb(0, 0, 0);"><span style="font-size: 26px;">135,56</span><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">8 </span></span></sub><span style=""></span><span style="font-size: 14px;"></span></span></big></big><big><big><span style="font-family: Arial; color: rgb(0, 0, 0);"><span style="font-size: 26px;">перевести в</span></span></big></big><big><big><span style="font-family: Arial; color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">16</span></span></sub>
+</span><br style="font-family: Arial; color: rgb(0, 0, 0);">
+
+
+
+<span style="font-family: Arial; color: rgb(0, 0, 0);"><span style="font-size: 26px;"><br>
+
+
+
+12D,567</span><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">16 </span></span></sub><span style="font-size: 26px;">перевести в&nbsp;A</span><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">8</span></span></sub></span></big></big>
+<p class="MsoNormal" style="text-align: center;" align="center"></p>
+
+
+
+<p><b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: red;">Задание
+7.</span></b> <b><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Запишите
+домашнюю работу. Выполните задание. Покажите работу
+преподавателю.</span></b></p>
+
+
+
+<ol>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Число
+    </span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;">1011101,10111</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">2&nbsp;</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">перевести
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">8</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">&nbsp;</span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">,
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">16</span></span></sub></span></li>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Число&nbsp;</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;">123,56</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">8&nbsp;</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">перевести
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">2</span></span></sub></span></li>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Число
+    </span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;">1А1,1Е</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">16&nbsp;</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">перевести
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">2</span></span></sub></span></li>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Число
+    </span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;">432,54</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">10&nbsp;</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">перевести
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">2</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">,
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">8</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">&nbsp;</span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">,
+в</span><span style="color: rgb(0, 0, 0);"><span style="font-size: 26px;"> A</span></span><span style="color: rgb(0, 0, 0);"><sub><span style="position: relative; top: 8pt;"><span style="font-size: 26px;">16</span></span></sub></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">.
+    <span style="color: rgb(7, 48, 153);">В дробной части
+оставить 5 знаков</span></span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">.</span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">;<br>
+
+
+
+    </span></li>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">П</span><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">ереведите
+римские цифры в арабские:</span></li>
+
+
+
+  
+  
+  <ol>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">MMMD=
+      </span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">XIX=&nbsp;
+      </span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">MCMXCVI=</span></li>
+
+
+
+  
+  
+  </ol>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Записать
+год своего рождения римскими цифрами.</span></li>
+
+
+
+  <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">Выполнить
+действия, результат записать римскими цифрами:</span></li>
+
+
+
+  
+  
+  <ol>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">XXII-V=</span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">CV-LII=</span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">IC+XIX=</span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">XX/V=</span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">X*IV=</span></li>
+
+
+
+    <li><span style="font-size: 14pt; font-family: Arial,sans-serif; color: black;">XXIV*VII=</span></li>
+
+
+  
+  </ol>
+
+
+</ol>
+
+
+
+<ol style="margin-left: 40px;">
+
+
+
+  
+  
+  <ol>
+
+
+
+  
+  
+  </ol>
+
+
+
+</ol>
+
+
+
+<div style="margin-left: 40px;"><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="color: rgb(19, 59, 70); font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: normal;"><span style="color: rgb(0, 0, 0); font-family: 'Comic Sans MS'; font-size: 28px; font-weight: bold;"></span></span><a name="_Задание_2"></a></div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell layout-item-1" style="width: 100%;">
+<h2 style="color: rgb(255, 0, 0);"><b><span style="font-size: 14pt; font-family: Arial,sans-serif;">Задание 8</span></b></h2>
+
+
+
+<div style="text-align: center;"><span style="color: rgb(255, 0, 0);"><span style="font-size: 54px;"></span></span><span style="color: rgb(245, 0, 0); cursor: text;"><span style="font-family: Arial; font-style: italic; font-size: 54px;">Контрольная
+работа</span></span><br>
+
+
+
+<span style="color: rgb(255, 0, 0); font-family: Arial;"></span></div>
+
+
+
+<p style="text-align: center;"><span style="font-family: Arial; color: rgb(0, 0, 255);"><span style="font-size: 22px;">Номер <span style="color: rgb(255, 0, 150);">вашего варианта</span> должен
+соответствовать <span style="color: rgb(255, 0, 150);">номеру вашего </span>компьютера!</span></span></p>
+
+
+
+<p style="text-align: center;"><span style="font-family: Arial; color: rgb(0, 0, 0);"><span style="font-size: 16px;"><br>
+
+
+
+</span></span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><span style="color: rgb(13, 36, 48); font-family: Arial,Helvetica,sans-serif; text-align: left;"><span style="font-size: 18px; text-align: left;">Для запуска
+теста: &nbsp;</span></span><span style="font-size: 18px; cursor: text;">Откройте в проводнике
+</span><img alt="" src="../images/tema3_papki.jpg" style="border: 0px solid ; width: 81px; height: 56px;"><span style="font-size: 18px;"> папку 1_semestr\1_semestr\tema_4\ТЕСТ СС 16 вар
+</span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><span style="font-size: 18px;"><b>Перетащите </b>файл тестовых вопросов
+на файл приложения MyTestStudent.exe</span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><img alt="" src="../images/1-3.jpg" style="border-width: 0px;" height="164" width="243"><br>
+
+
+
+</p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><span style="font-size: 18px;">Запустите тест;&nbsp;</span><img alt="" src="../images/14.jpg" style="border-width: 0px;" height="122" width="255"></p>
+
+
+<p style="margin-left: 54pt; margin-right: 0cm;"><span style="font-size: 18px;">При выполнение заданий по переводу чисел, </span><span style="font-size: 20px;"><span style="color: rgb(204, 0, 0);">решение </span><span style="color: rgb(0, 0, 255);"><strong>запишите</strong></span></span><span style="font-size: 18px;"><span style="color: rgb(0, 0, 255);"><strong> </strong></span>в <span style="color: rgb(204, 0, 0);">конспект</span>;</span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><span style="font-size: 18px;">В ответах с разделителями ставьте
+","</span></p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><br>
+
+
+
+</p>
+
+
+
+<p class="MsoNormal" style="margin: 0cm 0cm 12pt 54pt; text-indent: -54pt;"><span style="font-size: 18px;"><span style="color: rgb(40, 1, 39); font-weight: bold;">Сделайте</span>
+скринн (PrtScr) <span style="color: rgb(40, 1, 39);">экрана
+с <span style="font-style: italic;">результатом</span></span>
+прохождения теста, вставьте его в документ Word, сохраните документ в
+папке с номером своей группы.&nbsp;<span style="color: rgb(40, 3, 36);"></span>Покажите файл со
+скрином преподавателю</span></p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell layout-item-0" style="width: 100%;">
+<h1><span style="color: black;"><span style="font-family: 'Comic Sans MS';"><br>
+
+
+
+</span></span></h1>
+
+
+
+<h1><a name="_Таблица соответствия чисел между разными системами счисления"></a><span style="color: rgb(0, 0, 0);" comic="" sans="">Таблица
+соответствия чисел между разными системами счисления</span></h1>
+
+
+
+<p style="color: rgb(0, 0, 0);">Числа, не зависимо от системы
+счисления, всегда означают количество чего-нибудь. Собственно, записать
+число (в любой системе
+счисления) - это всего лишь способ записать это количество. Поэтому,
+можно составить таблицу соответствия между числами в разных системах
+счисления:</p>
+
+
+
+<p style="color: rgb(0, 0, 0);">Для практического
+применения имеет смысл запомнить первые 16
+строк этой таблицы (для чисел от 0 до 15). Но если разобраться в том,
+как эта таблица устроена, можно не запоминать, а научиться&nbsp;<a href="http://popoff.donetsk.ua/text/donntu/odm/theory/enumeration/faq.html#mind"><span class="GramE">легко</span>вычислять
+соответствие в уме</a>.</p>
+
+
+
+<p><img alt="" src="../images/Tema4_1_Tab_zapoln.jpg" style="border-width: 0px;"></p>
+
+
+
+<span style="font-family: Arial,sans-serif; color: black;"></span>
+<table style="width: 1209px; height: 412px;" class="MsoNormalTable" border="0" cellpadding="0">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td style="border-width: 0px; padding: 0.75pt;" class="">
+      
+      
+      <p style="text-indent: 63px;"><a href="./tema_4_1.html#_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_100"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;"></span></span></span></a><span style="font-size: 16px; cursor: text;"><span style="font-style: italic;"></span></span><span style="font-family: Arial; font-size: 16px; font-style: italic;"><br>
+
+
+
+      </span></p>
+
+
+
+      
+      
+      <h2><a name="Проверка_правильности_выполнения"></a><span style="font-family: Arial,sans-serif; color: rgb(18, 22, 174);"><span style="font-size: 20px;">Проверка правильности выполнения
+практического задания 3</span></span></h2>
+
+
+
+      
+      
+      <table style="border-collapse: collapse; width: 537pt;" border="0" cellpadding="0" cellspacing="0" width="715">
+
+
+
+        <col style="width: 81pt;" width="108"> <col style="width: 93pt;" width="124"> <col style="width: 97pt;" width="129"> <col style="width: 134pt;" width="178"> <col style="width: 132pt;" width="176"> <tbody>
+
+
+
+          <tr style="height: 29.25pt;" height="39">
+
+
+
+            <td class="xl65" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 29.25pt; width: 81pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" height="39" width="108">Вариант </td>
+
+
+
+            <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 93pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="124">Десятичная </td>
+
+
+
+            <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 97pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="129">Двоичная </td>
+
+
+
+            <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 134pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="178">Восьмиричная </td>
+
+
+
+            <td class="xl67" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 132pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="176">Шестнадцатиричная </td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">165</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10100101</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">245</td>
+
+
+
+            <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">A5
+            </td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">185</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10111001</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">271</td>
+
+
+
+            <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">B9
+            </td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">175</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10101111</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">257</td>
+
+
+
+            <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">AF
+            </td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,115</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,0001</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,0727</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,1D70А
+            </td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,186</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,0010</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,1371</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,2F9D</td>
+
+
+
+          </tr>
+
+
+
+          <tr style="height: 33pt;" height="44">
+
+
+
+            <td class="xl73" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,165</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,0010</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,1243</td>
+
+
+
+            <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">0,2A3D
+            </td>
+
+
+
+          </tr>
+
+
+
+        
+        
+        </tbody>
+      
+      
+      </table>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p><a href="tema_4_1.html#_%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_100"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;">К
+заданию 3</span></span></span></a></p>
+
+
+
+<span style="color: rgb(0, 0, 0); font-family: Arial,sans-serif;"></span><a name="_Задание_3"></a>
+<h2><br>
+
+
+
+</h2>
+
+
+
+<h2><span style="font-family: Arial,sans-serif; color: rgb(18, 22, 174);"><span style="font-size: 20px;">Проверка правильности выполнения
+практического задания 4</span></span></h2>
+
+
+
+<table style="border-collapse: collapse; width: 537pt;" border="0" cellpadding="0" cellspacing="0" width="715">
+
+
+
+  <col style="width: 81pt;" width="108"> <col style="width: 93pt;" width="124"> <col style="width: 97pt;" width="129"> <col style="width: 134pt;" width="178"> <col style="width: 132pt;" width="176"> <tbody>
+
+
+
+    <tr style="height: 29.25pt;" height="39">
+
+
+
+      <td class="xl65" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 29.25pt; width: 81pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" height="39" width="108">Вариант </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 93pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="124">Десятичная </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 97pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="129">Двоичная </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 134pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="178">Восьмиричная </td>
+
+
+
+      <td class="xl67" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 132pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="176">Шестнадцатиричная </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">298,9375</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">100101010,1111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">250,3125</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">11111010,0101</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">539,25</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1000011011,01</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">365,625</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">555,5</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">417,375</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">641,3</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl73" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">170,625</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">252,5</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">449,1875</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1C1,3</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">691,3125</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">2B3,5</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">929,125</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">3A1,2</td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p><a href="#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_4"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;"></span></span></span></a></p>
+
+
+
+<p><br>
+
+
+
+</p>
+
+
+
+<p><a name="К_заданию_4"></a><a href="#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_4"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;">К
+заданию 4</span></span></span></a><big><big><span style="font-style: italic; text-decoration: underline;"></span></big></big></p>
+
+
+
+<span style="color: rgb(0, 0, 0); font-family: Arial,sans-serif;"></span>
+<h2><br>
+
+
+
+</h2>
+
+
+
+<h2><span style="font-family: Arial,sans-serif; color: rgb(18, 22, 174);"><span style="font-size: 20px;">Проверка правильности выполнения практического задания 5</span></span></h2>
+
+
+
+<table style="border-collapse: collapse; width: 537pt;" border="0" cellpadding="0" cellspacing="0" width="715">
+
+
+
+  <col style="width: 81pt;" width="108"> <col style="width: 93pt;" width="124"> <col style="width: 97pt;" width="129"> <col style="width: 134pt;" width="178"> <col style="width: 132pt;" width="176"> <tbody>
+
+
+
+    <tr style="height: 29.25pt;" height="39">
+
+
+
+      <td class="xl65" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 29.25pt; width: 81pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" height="39" width="108">Вариант </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 93pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="124">Десятичная </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 97pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="129">Двоичная </td>
+
+
+
+      <td class="xl66" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 134pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="178">Восьмиричная </td>
+
+
+
+      <td class="xl67" style="border: 0.5pt solid windowtext; background: black none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 132pt; font-size: 12pt; color: white; text-decoration: none; text-align: center; font-family: Arial;" width="176">Шестнадцатиричная </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">100101010,1111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">452,74</td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">12A,F</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1000011011,01       </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1033,2         </td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">21B,4</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">11111010,0101</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">372,24</td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">FA,5</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+
+
+      </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10100100,1111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">A4,F</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">11000011,0111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">C3,7</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl73" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">11100100,1101</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+
+
+      
+      </td>
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">E4,D</td>
+
+
+	  
+
+  </tr>
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1000011011,01</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1033,2</td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">FA,5</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+      </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10101001110,1011111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">2516.574</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">A4E,5F</td>
+
+
+
+    </tr>
+
+
+
+ <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">110001011010,11010111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">8</td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">C5A,D7</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+      </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">10011110001,11111011</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">2361,766</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">4F1,FB </td>
+
+
+
+    </tr>
+
+
+
+  <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">1</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+      </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">1011111,110101</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">237,65</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">5F,D4</td>
+
+
+
+    </tr>
+
+
+
+ <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl72" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">2 </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"></td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">11110001,1111</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">361,74</td>
+
+
+
+      <td class="xl71" style="border: 0.5pt solid windowtext; background: rgb(54, 96, 146) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">F1,F</td>
+
+
+
+    </tr>
+
+
+
+    <tr style="height: 33pt;" height="44">
+
+
+
+      <td class="xl68" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; height: 33pt; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;" height="44">3</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;"><br>
+
+ </td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">100101001,000010</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">451,02</td>
+
+
+
+      <td class="xl69" style="border: 0.5pt solid windowtext; background: rgb(79, 129, 189) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 16pt; color: white; font-weight: 400; text-decoration: none; text-align: center; font-family: Arial;">129,08</td>
+
+
+
+    </tr>
+
+
+
+
+    
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<br>
+
+
+
+<p><a href="#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;"></span></span></span></a><a name="К_заданию_5"></a><a href="#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5"><span style="font-family: Arial; cursor: text;"><span style="font-style: italic;"><span style="font-size: 18px;">
+К заданию 5</span></span></span></a></p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div style="height: 30px;"></div>
+
+
+<div id="topNubex"><img src="../images/topNubex.jpg" height="30" width="71"></div>
+
+
+
+
+
+</body>
+</html>
