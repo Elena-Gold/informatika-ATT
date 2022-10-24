@@ -1,0 +1,2683 @@
+<html  dir="ltr" lang="en-US" xml:lang="en">
+<html xml:lang="en" dir="ltr" lang="en-US">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Тема 4.8 Двоичное кодирование. Адресация в сети Internet.</title>
+
+
+  <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+
+<!--[if IE 6]><link rel="stylesheet" href="../style.ie6.css" type="text/css" media="screen" /><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../style.ie7.css" type="text/css" media="screen" /><![endif]-->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <style type="text/css">
+  </style>
+  <meta charset="utf-8">
+
+  <style>
+#topNubex {
+position: fixed;
+right: 45px;
+bottom: 45px;
+}
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#topNubex').fadeIn();
+} else {
+$('#topNubex').fadeOut();
+}
+});
+$('#topNubex').click(function() {
+$('body,html').animate({scrollTop:0},700);
+});
+});
+  </script>
+</head>
+
+
+<body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+
+<div id="art-main">
+<div class="cleared reset-box"></div>
+
+<div class="art-header">
+<div class="art-header-position">
+<div class="art-header-wrapper">
+<div class="cleared reset-box"></div>
+
+<div class="art-header-inner">
+<div class="art-logo">
+<h1 class="art-logo-name"></h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cleared reset-box"></div>
+
+<div class="art-bar art-nav">
+<div class="art-nav-outer">
+<div class="art-nav-wrapper">
+<div class="art-nav-inner">
+<ul class="art-hmenu">
+
+  <li> <a href="../%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F.html">Главная</a>
+  </li>
+
+  <li> <a href="../tema_1.html">Тема 1</a> </li>
+
+  <li> <a href="../tema_2.html">Тема 2</a> </li>
+
+  <li> <a href="../tema_3.html">Тема 3</a>
+    <ul>
+
+      <li> <a href="../tema_3/tema_3_1.html">Графический
+интерфейс ОС Windows</a> </li>
+
+      <li> <a href="../tema_3/tema_3_2.html">Работа
+с файловым менеджером Проводник</a> </li>
+
+    </ul>
+
+  </li>
+
+ <li> <a href="../tema_4.html" class="active">Тема 4</a>
+    <ul>
+       <li> <a href="../tema_4/tema_4_1.html" >Арифметические основы работы компьютера</a>      </li>
+      <li> <a href="../tema_4/tema_4_2.html">Формы представления чисел</a></li>
+	  <li> <a href="../tema_4/tema_4_3.html">Действия с числами в позиционных системах счисления</a></li>
+      <li> <a href="../tema_4/tema_4_4.html">Системы счисления, решение задач для подготовки к ВПР</a></li>
+       <li> <a href="../tema_4/tema_4_5.html">Представление и измерение информации. Кодирование  информации. Алфавитный подход</a></li>     
+	  <li> <a href="../tema_4/tema_4_6.html">Представление и измерение графической информации</a></li>
+      <li> <a href="../tema_4/tema_4_7.html">Представление и измерение звуковой информации</a></li>
+
+      <li> <a href="../tema_4/tema_4_8.html"class="active">Двоичное кодирование. Адресация в сети Internet. Решение задач.</a></li>
+      <li> <a href="../tema_4/tema_4_9.html">Решение задач по теории игр. Выйграшная стратегия </a></li>
+	  <li> <a href="../tema_4/tema_4_10.html">Бинарное дерево: решение задач</a></li>
+    </ul>
+  </li>
+
+  <li> <a href="../tema_5.html">Тема 5</a> </li>
+
+  <li> <a href="../tema_6.html">Тема 6</a>
+    <ul>
+
+      <li> <a href="../tema_6/tema_6_1.html">Логические
+операции</a> </li>
+
+      <li> <a href="../tema_6/tema_6_2.html">Построение
+таблиц истинности и логических схем</a> </li>
+
+      <li> <a href="../tema_6/tema_6_3.html">Решение
+задач табличным способом</a> </li>
+
+      <li> <a href="../tema_6/tema_6_4.html">Круги
+Эйлера-Венца</a> </li>
+
+      <li> <a href="../tema_6/tema_6_5.html">Основные
+законы Алгебры логики</a> </li>
+
+      <li> <a href="../tema_6/tema_6_6.html">Решение
+задач</a> </li>
+
+      <li> <a href="../tema_6/tema_6_7.html">Тригеры
+и сумматоры</a> </li>
+
+    </ul>
+
+  </li>
+
+  <li><a href="../tema_7.html">Тема 7</a>
+    <ul>
+
+      <li> <a href="../tema_7/tema_7_1.html"> Виды
+и типы компьютеров</a>
+        <ul>
+
+          <li> <a href="../tema_7/var7_1.html">Вариант
+1</a> </li>
+
+          <li> <a href="../tema_7/var7_2.html">Вариант
+2</a> </li>
+
+          <li> <a href="../tema_7/var7_3.html">Вариант
+3</a> </li>
+
+          <li> <a href="../tema_7/var7_4.html">Вариант
+4</a> </li>
+
+          <li> <a href="../tema_7/var7_5.html">Вариант
+5</a> </li>
+
+        </ul>
+
+      </li>
+
+      <li> <a href="../tema_7/tema_7_2.html">Внутренние
+устройства компьютера </a></li>
+
+      <li> <a href="../tema_7/tema_7_3.html">Периферийные
+устройства компьютера</a> </li>
+
+    </ul>
+
+  </li>
+
+  <li> <a href="../tema_8.html">Тема 8</a>
+    <ul>
+
+      <li> <a href="../tema_8/tema_8_1.html">Алгоритмы
+и способы их описания</a> </li>
+
+      <li> <a href="../tema_8/tema_8_2.html">Компьютерные
+модели различных процессов</a>
+        <ul>
+
+          <li> <a href="../tema_8/var1.html">Вариант
+1</a> </li>
+
+          <li> <a href="../tema_8/var2.html">Вариант
+2</a> </li>
+
+          <li> <a href="../tema_8/var3.html">Вариант
+3</a> </li>
+
+          <li> <a href="../tema_8/var4.html">Вариант
+4</a> </li>
+
+          <li> <a href="../tema_8/var5.html">Вариант
+5</a> </li>
+
+        </ul>
+
+      </li>
+
+      <li> <a href="../tema_8/tema_8_3.html">Реализация
+различных видов алгоритмов</a> </li>
+
+      <li> <a href="../tema_8/tema_8_4.html">Теория
+построения графов</a> </li>
+
+      <li> <a href="../tema_8/tema_8_5.html">Решение
+задач</a> </li>
+
+    </ul>
+
+  </li>
+
+  <li> <a href="../tema_9.html">Тема 9</a> </li>
+
+  <li> <a href="../control.html">Контроль</a>
+  </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cleared reset-box"></div>
+
+<div class="art-box art-sheet">
+<div class="art-box-body art-sheet-body">
+<div class="art-layout-wrapper">
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell art-content">
+<div class="art-box art-post">
+<div class="art-box-body art-post-body">
+<div class="art-post-inner art-article">
+<div class="art-postcontent">
+<div class="art-content-layout">
+<div class="art-content-layout-row">
+<div class="art-layout-cell" style="width: 100%; background-color: rgb(255, 255, 255);">
+<p style="text-align: left; color: rgb(0, 0, 0);"><span style="font-family: Arial;"><span style="font-size: 28px;"><span style="font-weight: bold;">Двоичное
+кодирование. Адресация в сети Internet. Решение задач.</span></span></span></p>
+
+<p style="color: rgb(0, 0, 0);" class="MsoNormal"><b><span style="font-family: Arial,sans-serif;"><span style="font-size: 18px;">Цели</span></span></b></p>
+
+<ul style="color: rgb(0, 0, 0);" type="disc">
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif; font-size: 15px;">Изучить
+способы адресации в сети Интернет; </span> </li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif; font-size: 15px;">Научить
+определять IP-адрес; </span> </li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif; font-size: 15px;">Научиться
+осуществлять поиск информации о компьютере по его IP-адресу; </span>
+  </li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif; font-size: 15px;">Научить
+учащихся определять адрес сети; </span> </li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif; font-size: 15px;">Осуществить
+подготовку к ВПР и ЕГЭ. </span> </li>
+
+  <br>
+
+</ul>
+
+<p style="color: rgb(0, 0, 0);" class="MsoNormal"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">Инструменты:</span></span></p>
+
+<ul style="color: rgb(0, 0, 0);" type="disc">
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">ОС Windows</span></span></li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">Калькулятор</span></span></li>
+
+  <li class="MsoNormal"><span style="font-family: Arial,sans-serif;"><span style="font-size: 15px;">Браузер</span></span></li>
+
+</ul>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><b><u><span style="font-family: Arial,sans-serif;"><span style="font-size: 18px;">Задание 1.</span></span></u></b>
+<b><span style="font-family: Arial,sans-serif;"><span style="font-size: 18px;">Запишите в конспекте основные
+понятия</span></span></b></p>
+
+<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><br>
+
+</span>
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: Arial,sans-serif; font-size: 18px;"><span style="background-color: rgb(255, 255, 255);">Адрес
+документа в Интернете (с английского &mdash; URL &mdash;
+Uniform Resource Locator)</span>&nbsp;</span></p>
+
+<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><br>
+
+<p><span style="font-family: Arial,sans-serif; font-size: 18px;"><span style="background-color: rgb(255, 255, 255);">Протокол
+передачи данных; может быть:
+<ul>
+
+  <li> <span style="font-family: Arial,sans-serif; font-size: 16px;"><span style="background-color: rgb(255, 255, 255);">http (для
+Web-страниц) или</span></span></li>
+
+  <li> <span style="font-family: Arial,sans-serif; font-size: 16px;"><span style="background-color: rgb(255, 255, 255);">ftp (для
+передачи файлов)</span></span></li>
+
+  <li><span style="font-family: Arial,sans-serif; font-size: 16px;"><span style="background-color: rgb(255, 255, 255);">встречается
+также защищенный протокол https.</span></span></li>
+
+</ul>
+
+</span></span></p>
+
+</span><span style="background-color: rgb(255, 255, 255);"><span style="color: rgb(0, 0, 0);"><br>
+
+</span>
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p>В
+терминологии сетей TCP/IP маской сети называют двоичное число, которое
+показывает, какая часть IP-адреса узла сети относится к адресу сети, а
+какая &ndash; к адресу узла в этой сети. Адрес сети получается в
+результате применения поразрядной конъюнкции к заданному адресу узла и
+его маске.</span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><img style="width: 500px; height: 115px;" alt="" src="Tema_4_images/Tema_4_7_0100.jpg"><font size="+1"><span style="font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 13pt;">Где:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 0cm; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">имя
+протокола сетевой службы &ndash; определяет тип сервера <i>HTTP</i>
+(протокол
+передачи гипертекста)</span><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 11.5pt;">
+(встречается также защищенный протокол&nbsp;</span><code><span style="background: rgb(249, 242, 244) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 10pt;">https</span></code><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 11.5pt;">)</span><span style="font-size: 13pt;">;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 0cm; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">разделитель
+в виде символа двоеточия и двух символов <i>Slash </i></span><span style="background: rgb(249, 242, 244) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 10pt;">://</span><span style="font-size: 13pt;">;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 0cm; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">полное
+доменное имя сервера;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 0cm; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">путь
+поиска web-документа на компьютере (или IP-адрес);<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 72pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">имя
+web-сервера;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 72pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">домен
+верхнего уровня <i>&laquo;org&raquo;</i>;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 72pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">имя
+национального
+домена <i>&laquo;ru&raquo;</i>;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 72pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">каталог
+<i>main</i> на
+компьютере;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 72pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">каталог
+<i>news</i> в
+каталоге <i>main</i>;<o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-left: 72pt; margin-bottom: 0.0001pt; text-align: justify; text-indent: -18pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 13pt;"><span style="">6.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;">конечная
+цель поиска &ndash;
+файл <i>main_news.html</i>.<o:p></o:p></span></font><!--[endif]--></p>
+
+<p style="font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="">Сетевые адреса<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 13pt;">Физический
+адрес или MAC-адрес &ndash; уникальный адрес,
+&laquo;вшитый&raquo; на производстве
+&mdash; 48-битный код сетевой карты (в 16-ричной системе): <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><strong><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">00-17-E1-41-AD-73</span></strong><span style="font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Адресация
+в Интернете &bull; IP-адрес &ndash; уникальный
+номер компьютера в сети. Состоит из 32 битного числа, разделённых
+точками на
+группы по 8 бит. 11000000. 10101000. 011001000101 192. 168. 100. 69</span><span style="font-size: 13pt;"> состоящий из: номер
+сети + номер компьютера в сети (адрес узла)</span><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p style="font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">Классы
+IP-адресов <span style="">&nbsp;</span><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Класс
+А (1 - 126) &ndash; 1 байт &ndash; номер сети, 3 байта
+&ndash; номер узла. 92. 126. 30. 0<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Класс
+B (128 -191) &ndash; 2 байта &ndash; номер сети, 2
+байта &ndash; номер узла. 110. 126. 30. 0<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Класс
+С (192 &ndash; 223) &ndash; 3 байта &ndash; номер сети, 1
+байт &ndash; номер узла. 220. 126. 30. 0</span><span style="font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p style="font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="">Маска подсети:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Маска
+подсети В терминологии сетей TCP/IP маской сети или маской подсети
+называется двоичное число, определяющее, какая часть
+IP-адреса узла сети относится к адресу сети, а какая - к адресу самого
+узла в этой сети.
+Например, узел с IP-адресом 12. 34. 56. 78 и маской подсети 255. 0. 0
+находится в сети 12. 34. 0. 0. Чтобы получить адрес сети, зная IP-адрес
+и маску
+подсети, необходимо применить к ним операцию поразрядной конъюнкции
+(логическое
+И). <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Например,
+в случае более сложной маски: <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">IP-адрес:
+<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>00001100 0010 00111000 01001110 (12.
+34. 56. 78) <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Маска
+подсети: <span style="">&nbsp; </span>11111111
+11100000 (255. 224. 0) <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">Адрес
+сети: <span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>00001100 00100000 (12. 34. 32. 0)</span><span style="font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 0cm; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 10pt;"><span style="">&middot;<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;"><span style="background-color: rgb(255, 255, 255);">необходима для
+определения того, какие компьютеры находятся в той же подсети;</span><o:p></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-bottom: 7.5pt; margin-left: 35.45pt; text-align: justify; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><strong><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt;">255.255.255.0
+-&gt; FF.FF.FF.0</span></strong><span style="font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-left: 0cm; margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><!--[if !supportLists]--><font size="+1"><span style="font-size: 10pt;"><span style="">&middot;<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span style="font-size: 13pt;"><span style="background-color: rgb(255, 255, 255);">маска
+в двоичном коде всегда имеет структуру: сначала все единицы, затем все
+нули:</span><o:p style="background-color: rgb(255, 255, 255);"></o:p></span></font><!--[endif]--></p>
+
+<p class="MsoNormal" style="margin-left: 35.45pt; margin-bottom: 0.0001pt; text-align: justify; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><font size="+1"><strong><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">1&hellip;10&hellip;0</span></strong></font></p>
+
+<p class="MsoNormal" style="margin-left: 35.45pt; margin-bottom: 0.0001pt; text-align: justify; line-height: normal; font-family: Arial; color: rgb(0, 0, 0);"><img style="border: 0px solid ; width: 500px; height: 99px;" alt="" src="Tema_4_images/Tema_4_7_0115.jpg"><font size="+1"><strong><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;"></span></strong><span style="font-size: 13pt;"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="background-color: rgb(255, 255, 255);">Та часть
+IP-адреса, которая соответствует битам маски равным единице, относится
+к адресу
+сети, а часть, соответствующая битам маски равным нулю &ndash; это
+числовой адрес компьютера</span><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Таким
+образом, можно определить каким может быть<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"> последнее число
+маски</span></strong>:</span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><img style="border: 0px solid ; width: 624px; height: 468px;" alt="" src="Tema_4_images/Tema_4_7_0020.jpg"></span></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 15pt; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span><span style="font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span><span style="font-size: 13pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></font></p>
+
+<span style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-size: 13pt; line-height: 115%; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);">если
+два узла относятся к одной сети, то адрес сети у них одинаковый.<o:p></o:p></span>
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><font size="+1"><span style=""><span style="color: rgb(204, 0, 0); font-weight: bold; text-decoration: underline;">Пример
+1.</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<table class="MsoNormalTable" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse; color: rgb(0, 0, 0);" align="right" border="1" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">.net<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Б<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">ftp<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">://<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">http<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">/<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">.org<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 21.6pt;" valign="top" width="36">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="padding: 0cm; width: 34.2pt;" valign="top" width="57">
+      <p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">txt<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Доступ
+к файлу <b>ftp.net</b>
+, находящемуся на сервере <b>txt.org</b>, осуществляется
+по протоколу <b>http</b>.
+В таблице фрагменты адреса файла закодированы буквами от А до Ж.
+Запишите
+последовательность этих букв, кодирующую адрес указанного файла в сети
+Интернет.<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p style="color: rgb(0, 0, 0);"><font size="+1"><span style=""><span style="color: rgb(102, 102, 102);">Решение:</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При
+записи адреса
+файла в интернете сначала указывается протокол, затем ставится
+последовательность символов <b>://</b>, затем имя сервера,
+затем символ <b>/</b>,
+и лишь потом имя файла: http://txt.org/ftp.net.<o:p></o:p></span></font></p>
+
+<p style="color: rgb(0, 0, 0);"><font size="+1"><i><span style="">Ответ:
+</span></i><span style="">ГВЖЕДБА<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p style="color: rgb(0, 0, 0);"><font size="+1"><u style="color: rgb(204, 0, 0); font-weight: bold;"><span style="">Пример
+2.</span></u><span style=""><span style="color: rgb(204, 0, 0); font-weight: bold;">
+Восстановление
+IP-адресов</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес
+школьного сервера на листке бумаги и положил его в карман куртки.
+Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в
+кармане четыре обрывка с фрагментами IP-адреса. Эти фрагменты
+обозначены
+буквами А, Б, В и Г. Восстановите IP-адрес. В ответе укажите
+последовательность
+букв, обозначающих фрагменты, в порядке, соответствующем IP-адресу.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><!--[endif]--></span><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);"><font><font size="+1"><span style=""><img style="border: 0px solid ; width: 635px; height: 140px;" alt="" src="Tema_4_images/Tema_4_7_0010.jpg"></span></font></font></span></h3>
+
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p style="color: rgb(0, 0, 0);"><font size="+1"><span style=""><span style="color: rgb(102, 102, 102);">Решение:</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес
+представляет
+собой 4 числа, разделенные точками, причем эти числа не больше 255.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Посмотрим
+внимательнее
+на данные фрагменты: под буквой Г мы видим &laquo;.42&raquo;.
+Так как числа в IP-адресе не
+могут быть больше 255, мы не можем ничего дописать к этому числу, а
+фрагментов,
+начинающихся с точки, больше нет, следовательно, этот фрагмент
+&ndash; последний.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">На
+фрагменте под
+буквой Б число без точек, значит, это либо последний фрагмент, либо
+первый.
+Место последнего фрагмента уже занято, значит фрагмент Б первый.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal; color: rgb(0, 0, 0);"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В
+конце фрагмента А -
+число 212, отделенное точкой, значит за фрагментом А должен следовать
+фрагмент,
+начинающийся с точки. Значит, фрагмент А идет перед фрагментом Г.<o:p></o:p></span></font></p>
+
+<p style="background-color: rgb(255, 255, 255);"><font size="+1"><span style=""><span style="color: rgb(0, 0, 0);">Ответ:
+БВАГ</span><o:p style="color: rgb(0, 0, 0);"></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><b style="color: rgb(0, 0, 0);"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style=""></span></span></b><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><u style="background-color: rgb(255, 255, 255); color: rgb(204, 0, 0); font-weight: bold;"><span style="">Пример
+3. </span></u><span style=""><span style="background-color: rgb(255, 255, 255); color: rgb(204, 0, 0); font-weight: bold;">Определение
+адреса сети</span></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p style="color: rgb(51, 51, 255);"><big><big><big>Посмотрите
+видео. Сделайте запись решения примера по видео</big></big></big></p>
+
+</span>
+<div style="text-align: center; background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p>.<iframe src="https://www.youtube.com/embed/i-WuXyD7chY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" width="560"></iframe><span style=""><span style="background-color: rgb(255, 255, 255); color: rgb(204, 0, 0); font-weight: bold;"></span><o:p></o:p></span></p>
+
+</span></div>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Попробуйте
+решить задачу самостоятельно. Запишите вопосы, если не получасеься
+решить задачу самостоятельно.</span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">В
+терминологии сетей
+TCP/IP маской сети называется двоичное число, определяющее, какая часть
+IP-адреса узла сети относится к адресу сети, а какая - к адресу самого
+узла в
+этой сети. Обычно маска записывается по тем же правилам, что и
+IP-адрес. Адрес
+сети получается в результате применения поразрядной конъюнкции к
+заданным
+IP-адресу узла и маске.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">По
+заданным IP-адресу
+узла и маске определите адрес сети.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">IP-адрес
+узла:
+218.137.218.137<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Маска:
+255.255.248.0<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">При
+записи ответа
+выберите из приведённых в таблице чисел четыре элемента IP-адреса и
+запишите в
+нужном порядке соответствующие им буквы без использования точек.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">При
+записи ответа
+выберите из приведенных в таблице чисел 4 фрагмента четыре элемента
+IP-адреса и
+запишите в нужном порядке соответствующие им буквы без точек.<o:p></o:p></span></font></p>
+
+<table class="MsoNormalTable" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr style="">
+
+      <td style="border: 1pt solid black; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">A<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">B<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">C<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">D<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">E<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">F<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">G<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">H<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="height: 10.5pt;">
+
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">255<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">249<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">218<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">216<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">137<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">32<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">8<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">0<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><span style="">&nbsp;</span>Пример. Пусть искомый адрес
+сети 192.168.128.0
+и дана таблица <span style="">&nbsp;</span><o:p></o:p></span></font></p>
+
+<table class="MsoNormalTable" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr style="">
+
+      <td style="border: 1pt solid black; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">A<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">B<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">C<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">D<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">E<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">F<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">G<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: solid solid solid none; border-color: black black black -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 3pt; width: 33.75pt;" width="56">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">H<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr style="height: 10.5pt;">
+
+      <td style="border-style: none solid solid; border-color: -moz-use-text-color black black; border-width: medium 1pt 1pt; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">128<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">168<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">255<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">8<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">127<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">0<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">17<o:p></o:p></span></font></p>
+
+      </td>
+
+      <td style="border-style: none solid solid none; border-color: -moz-use-text-color black black -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 3pt; height: 10.5pt;">
+      <p class="MsoNormal" style="margin: 3.75pt 0cm 0.0001pt; text-align: center; line-height: normal;" align="center"><font size="+1"><span style="font-size: 9pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">192<o:p></o:p></span></font></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">В
+этом случае
+правильный ответ будет HBAF.<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><span style=""><a name="Решение_пример_3:"></a><a href="#%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B0_3">Решение
+пример 3:</a><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<br>
+
+<p><font size="+1"><span style=""><o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><a name="Пример_4._Определение_маски_сети"></a><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><big style="font-weight: bold;"><u style="color: rgb(204, 0, 0);"><span style="">Пример
+4.</span></u></big><span style=""><big style="font-weight: bold;"><span style="color: rgb(204, 0, 0);"> Определение маски
+сети</span></big><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">В
+терминологии сетей
+TCP/IP маской сети называется двоичное число, определяющее, какая часть
+IP-адреса узла сети относится к адресу сети, а какая &ndash; к
+адресу самого узла в
+этой сети. Обычно маска записывается по тем же правилам, что и
+IP-адрес, &ndash; в
+виде четырёх байтов, причём каждый байт записывается в виде десятичного
+числа.
+При этом в маске сначала (в старших разрядах) стоят единицы, а затем с
+некоторого разряда &ndash; нули. <o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Адрес
+сети получается
+в результате применения поразрядной конъюнкции к заданному IP-адресу
+узла и
+маске. Например, если IP-адрес узла равен 231.32.255.131, а маска равна
+255.255.240.0,
+то адрес сети равен 231.32.240.0.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Для
+узла с IP-адресом
+111.81.208.27 адрес сети равен 111.81.192.0. Чему равно наименьшее
+возможное
+значение третьего слева байта маски? Ответ запишите в виде десятичного
+числа.<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><span style="">Решение:<o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Поскольку
+нас
+интересует только третий байт маски, запишем третий байт IP-адреса и
+адреса
+сети в двоичной системе счисления:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">208</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 11010000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">192</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 11000000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">С
+каким числом нужно
+произвести конъюнкцию 11010000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2
+</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">,
+чтобы получить 11000000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2
+</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">?
+Очевидно, что первые
+две цифры должны быть единицами, а 4-я нулем.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Это
+или 11000000, или
+11100000. По условию задачи требуется найти наименьшее значение
+&ndash; это 11000000.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">11000000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 192</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p><font size="+1"><span style="">Ответ:
+192<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><u><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><span style="">&nbsp;</span></span></u><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><u style="color: rgb(204, 0, 0); font-weight: bold;"><span style="">Пример
+5. </span></u><span style=""><span style="color: rgb(204, 0, 0); font-weight: bold;">Подсчет
+количества адресов</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">В
+терминологии сетей
+TCP/IP маской подсети называется 32-разрядное двоичное число,
+определяющее,
+какие именно разряды IP-адреса компьютера являются общими для всей
+подсети &ndash; в
+этих разрядах маски стоит 1. Обычно маски записываются в виде четверки
+десятичных чисел - по тем же правилам, что и IP-адреса. Для некоторой
+подсети
+используется маска 255.255.254.0. Сколько различных адресов компьютеров
+теоретически допускает эта маска, если два адреса (адрес сети и
+широковещательный) не используют?<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><span style="">Решение:<o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">За
+адрес компьютера в
+маске отвечают разряды, содержащие нули. В маске 255.255.254.0. первые
+два
+числа состоят полностью из единиц, т.е.<span style="">&nbsp;
+</span>определяют адрес сети. Запишем третье число маски в
+двоичном виде: 254 =
+11111110</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Четвертое
+число маски
+в двоичном представлении состоит из 8 нулей.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Т.е.
+маска выглядит
+следующим образом:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">11111111
+11111111
+1111111<b><u>0 00000000</u></b><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Т.е.
+под адрес
+компьютера выделено 9 разрядов, значит туда можно записать 2</span><sup><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">9</span></sup><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 512 адресов, но,
+так как два адреса не используются, получаем 512 &ndash; 2 = 510.<o:p></o:p></span></font></p>
+
+<p><font size="+1"><span style="">Ответ:
+510<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><u style="color: rgb(204, 0, 0);"><span style="">Пример
+6.</span></u><span style=""><span style="color: rgb(204, 0, 0);"> Определение
+номера компьютера в сети</span><o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Маской
+подсети
+называется 32-разрядное двоичное число, которое определяет, какая часть
+IP-адреса компьютера относится к адресу сети, а какая часть IP-адреса
+определяет адрес компьютера в подсети. В маске подсети старшие биты,
+отведенные
+в IP-адресе компьютера для адреса сети, имеют значение 1; младшие биты,
+отведенные в IP-адресе компьютера для адреса компьютера в подсети,
+имеют
+значение 0.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Если
+маска подсети
+255.255.224.0 и IP-адрес компьютера в сети 206.158.124.67, то номер
+компьютера
+в сети равен_____<o:p></o:p></span></font></p>
+
+</span>
+<h3 style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);">
+<p><font size="+1"><span style="">Решение:<o:p></o:p></span></font></p>
+
+</span></h3>
+
+<span style="background-color: rgb(255, 255, 255);">
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Первые
+два числа маски
+равны 255 (в двоичной записи состоят полностью из единиц). Третье число
+маски
+224</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 11100000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2.
+</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Четвертое
+число маски состоит из 8 нулей. Т.е. маска выглядит следующим
+образом:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">11111111
+11111111 111<b><u>00000
+00000000</u></b><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Т.е.
+под адрес
+компьютера отведено 13 разрядов.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Запишем
+последние два
+числа IP-адреса компьютера в сети: 124</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 1111100</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">67</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 1000011</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Т.е.
+последние два
+числа IP-адреса компьютера в сети записываются так:<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">011<b><u>11100
+01000011. </u></b>Нам нужны только последние 13 разрядов
+(подчеркнутая часть),
+переведем её в десятичную систему счисления: 1110001000011</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 7235</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p><font size="+1"><span style="">Ответ:
+7235<o:p></o:p></span></font></p>
+
+</span><span style="background-color: rgb(255, 255, 255);"></span><b><span style="font-family: Arial,sans-serif; color: red;"><span style="font-size: 30px;">Проверочная работа</span></span></b>&nbsp;
+<strong><span style="font-size: 16pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: red;"><br>
+
+Вариант 1</span></span></span></strong><strong>&nbsp;</strong><br>
+
+<div style="margin-left: 40px;"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: black;">1 </span></span></span><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: black;">Доступ к файлу rus.doc, находящемуся
+на сервере obr.org, осуществляется по протоколу https. Фрагменты адреса
+файла закодированы буквами от А до Ж. Запишите в таблицу
+последовательность этих букв, кодирующую адрес указанного файла в сети
+Интернет.</span></span></span><span style="color: rgb(0, 0, 0);">
+</span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">А) obr.</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Б) /</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В) org</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г) ://</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) doc</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) rus.</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) https</span></span>
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес школьного
+сервера на листке бумаги и положил его в карман куртки. Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в кармане четыре обрывка с фрагментами IP-адреса. Эти
+фрагменты обозначены буквами А, Б, В и Г. Восстановите IP-адрес. В
+ответе укажите последовательность букв, обозначающих фрагменты, в
+порядке, соответствующем IP-адресу.</span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+<img style="border: 0px solid ; width: 635px; height: 140px;" alt="" src="Tema_4_images/Tema_4_7_0010.JPG"><br>
+
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">3 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+Если маска подсети 255.255.255.128 и
+IP-адрес компьютера в сети 122.191.12.189, то номер компьютера в сети
+равен_____</span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">4 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В терминологии
+сетей TCP/IP маской
+сети называют двоичное число, которое показывает, какая часть IP-адреса
+узла сети относится к адресу сети, а какая &ndash; к адресу узла в
+этой сети. Адрес сети получается в результате применения поразрядной
+конъюнкции к заданному адресу сети и его маске. По заданным IP-адресу
+сети и маске определите адрес сети:</span></span>
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес:
+145.92.137.88 Маска:
+255.255.240.0</span></span></p>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При записи ответа
+выберите из
+приведенных в таблице чисел 4 фрагмента четыре элемента IP-адреса и
+запишите в нужном порядке соответствующие им буквы без точек.</span></span></p>
+
+</span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<table class="Table" style="width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">145</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">137</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">240</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">88</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">92</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+</span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Пример. Пусть
+искомый адрес сети
+192.168.128.0 и дана таблица</span></span></p>
+
+</span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<table class="Table" style="width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">168</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">127</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">17</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="margin-left: 54pt; text-align: justify; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В этом случае
+правильный ответ будет
+HBAF.</span></span></p>
+
+<strong><span style="font-size: 16pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: red;">Вариант 2</span></span></span></strong>
+<br>
+
+</span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">1 </span></span><strong style="color: rgb(0, 0, 0);">
+</strong><span style="font-size: 10.5pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Доступ к файлу
+net.doc,
+находящемуся на сервере spb.net, осуществляется по протоколу http. В
+таблице фрагменты адреса файла закодированы буквами от А до Ж. Запишите
+последовательность этих букв, кодирующую адрес указанного файла в сети
+Интернет.</span></span><span style="color: rgb(0, 0, 0);">
+</span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">А) net&nbsp;</span></span>
+<ul style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+
+</ul>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Б) ://</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В) spb</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г) /</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д)&nbsp;.doc</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е) http</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж).net</span></span>
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+</span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес школьного
+сервера на листке бумаги и положил его в карман куртки. Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в кармане четыре обрывка с фрагментами IP-адреса. Эти
+фрагменты обозначены буквами А, Б, В и Г. Восстановите IP-адрес. В
+ответе укажите последовательность букв, обозначающих фрагменты, в
+порядке, соответствующем IP-адресу. </span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><img style="border: 0px solid ; width: 582px; height: 124px;" alt="" src="Tema_4_images/Tema_4_7_0012.JPG"></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+3 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+Если маска подсети 255.255.255.192 и
+IP-адрес компьютера в сети 10.18.134.220, то номер компьютера в сети
+равен_____</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+4 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В
+терминологии
+сетей TCP/IP маской сети называют двоичное число, которое показывает,
+какая часть IP-адреса узла сети относится к адресу сети, а какая
+&ndash; к адресу узла в этой сети. Адрес сети получается в
+результате применения поразрядной конъюнкции к заданному адресу сети и
+его маске. По заданным IP-адресу сети и маске определите адрес сети:</span></span></span></span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<ul style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+
+</ul>
+
+<p style="margin-left: 72pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес:
+217.16.246.2 Маска: 255.255.252.0</span></span></p>
+
+<p style="margin-left: 72pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При записи ответа
+выберите из приведенных в таблице чисел 4 фрагмента четыре элемента
+IP-адреса и запишите в нужном порядке соответствующие им буквы без
+точек.</span></span></p>
+
+<table style="width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="Table" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">244</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">217</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">16</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">2</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">252</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">246</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="margin-left: 36pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Пример. Пусть
+искомый адрес сети 192.168.128.0 и дана таблица</span></span></p>
+
+<table class="Table" style="width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">168</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">127</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">17</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="margin-left: 36pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В этом случае
+правильный ответ будет HBAF.</span></span></p>
+
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><strong><span style="font-size: 16pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: red;">Вариант 3</span></span></span></strong>&nbsp;<span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span>
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">1 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Доступ к файлу с
+именем net и
+расширением png, находящемуся на сервере mil.org, осуществляется по
+протоколу http. В таблице фрагменты адреса файла закодированы буквами
+от А до Ж. Запишите последовательность этих букв, кодирующую адрес
+указанного файла в сети Интернет.</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">А) http</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Б) org</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В) .png</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г) net</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д) mil.</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е) ://</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж) / </span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес школьного
+сервера на листке бумаги и положил его в карман куртки. Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в кармане четыре обрывка с фрагментами IP-адреса. Эти
+фрагменты обозначены буквами А, Б, В и Г. Восстановите IP-адрес. В
+ответе укажите последовательность букв, обозначающих фрагменты, в
+порядке, соответствующем IP-адресу. <img style="border: 0px solid ; width: 582px; height: 124px;" alt="" src="Tema_4_images/Tema_4_7_0012.JPG"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);">
+3
+Если маска подсети 255.255.255.240 и
+IP-адрес компьютера в сети 192.168.156.235, то номер компьютера в сети
+равен_____</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+4 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В
+терминологии
+сетей TCP/IP маской сети называют двоичное число, которое показывает,
+какая часть IP-адреса узла сети относится к адресу сети, а какая
+&ndash; к адресу узла в этой сети. Адрес сети получается в
+результате применения поразрядной конъюнкции к заданному адресу сети и
+его маске. По заданным IP-адресу сети и маске определите адрес сети:</span></span>
+<p style="color: rgb(0, 0, 0);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес:
+217.16.246.2 Маска: 255.255.252.0</span></span></p>
+
+<p style="color: rgb(0, 0, 0);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При записи ответа
+выберите из приведенных в таблице чисел 4 фрагмента четыре элемента
+IP-адреса и запишите в нужном порядке соответствующие им буквы без
+точек.</span></span></p>
+
+</span></span></span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<table style="width: 60%; color: rgb(0, 0, 0);" class="Table" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>A</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>B</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>C</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>D</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>E</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>F</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>G</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>H</strong></big></big></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>0</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>145</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>255</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>137</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>128</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>240</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>88</strong></big></big></p>
+
+      </td>
+
+      <td><big><big> </big></big>
+      <p style="text-align: center;"><big><big><strong>92</strong></big></big></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="color: rgb(0, 0, 0);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Пример. Пусть
+искомый адрес сети 192.168.128.0 и дана таблица</span></span></p>
+
+<table style="width: 60%; color: rgb(0, 0, 0);" class="Table" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">168</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">127</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">17</span></span></strong></p>
+
+      </td>
+
+      <td style="text-align: center;">
+      <p><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</span></span></span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<p style="color: rgb(0, 0, 0);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В этом случае
+правильный ответ будет HBAF.</span></span></p>
+
+<strong><span style="font-size: 16pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: red;">Вариант 4</span></span></span></strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">​​​​​&nbsp;</span></span>
+</span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">1 </span></span><strong style="color: rgb(0, 0, 0);">&nbsp;</strong><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Доступ к файлу
+rus.doc, находящемуся
+на сервере obr.org, осуществляется по протоколу https. Фрагменты адреса
+файла закодированы буквами от А до Ж. Запишите в таблицу
+последовательность этих букв, кодирующую адрес указанного файла в сети
+Интернет.</span></span><span style="color: rgb(0, 0, 0);">
+</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">А) obr.</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Б) /</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В) org</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г) ://</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) doc</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) rus.</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">) https</span></span>
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+</span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес школьного
+сервера на листке бумаги и положил его в карман куртки. Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в кармане четыре обрывка с фрагментами IP-адреса. Эти
+фрагменты обозначены буквами А, Б, В и Г. Восстановите IP-адрес. В
+ответе укажите последовательность букв, обозначающих фрагменты, в
+порядке, соответствующем IP-адресу. <img style="border: 0px solid ; width: 552px; height: 115px;" alt="" src="Tema_4_images/Tema_4_7_0014.JPG"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);">
+3
+Если маска подсети 255.255.255.248 и
+IP-адрес компьютера в сети 156.128.0.227, то номер компьютера в сети
+равен_____</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+4 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В
+терминологии
+сетей TCP/IP маской сети называют двоичное число, которое показывает,
+какая часть IP-адреса узла сети относится к адресу сети, а какая
+&ndash; к адресу узла в этой сети. Адрес сети получается в
+результате применения поразрядной конъюнкции к заданному адресу сети и
+его маске. По заданным IP-адресу сети и маске определите адрес сети:</span></span>
+<ul style="color: rgb(0, 0, 0);">
+
+</ul>
+
+</span>
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес:
+217.16.246.2 Маска: 255.255.252.0</span></span></p>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При записи ответа
+выберите из приведенных в таблице чисел 4 фрагмента четыре элемента
+IP-адреса и запишите в нужном порядке соответствующие им буквы без
+точек.</span></span></p>
+
+</span></span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<table style="width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="Table" border="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">C</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">12</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">248</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">16</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">196</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Пример. Пусть
+искомый адрес сети 192.168.128.0 и дана таблица</span></span></p>
+
+<table style="text-align: left; width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">168</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">127</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">17</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</span></span>
+<div style="margin-left: 40px;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В этом случае
+правильный ответ будет HBAF.</span></span></p>
+
+<strong><span style="font-size: 16pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="color: red;">Вариант 5</span></span></span></strong><strong>&nbsp;</strong>&nbsp;
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+1 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Доступ
+к файлу с
+именем ftp и расширением txt, находящемуся на сервере abc.ru,
+осуществляется по протоколу ftp. В таблице фрагменты адреса файла
+закодированы буквами от
+А до Ж. Запишите последовательность этих букв, кодирующую адрес
+указанного файла в сети Интернет (каждую букву можно использовать
+только один раз).</span></span><span style="color: rgb(0, 0, 0);">
+</span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">А) //</span></span>
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+Б) /</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В) :</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Г) ftp</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Д) ftp.</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Е) txt</span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ж) abc.ru</span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+2 </span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Петя
+записал IP-адрес школьного
+сервера на листке бумаги и положил его в карман куртки. Петина мама
+случайно постирала куртку вместе с запиской. После стирки Петя
+обнаружил в кармане четыре обрывка с фрагментами IP-адреса. Эти
+фрагменты обозначены буквами А, Б, В и Г. Восстановите IP-адрес. В
+ответе укажите последовательность букв, обозначающих фрагменты, в
+порядке, соответствующем IP-адресу. </span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+<img style="border: 0px solid ; width: 559px; height: 114px;" alt="" src="Tema_4_images/Tema_4_7_0015.JPG"></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+</span></span><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);"></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(0, 0, 0);">
+3
+Если маска подсети 255.255.255.224 и
+IP-адрес компьютера в сети 162.198.0.157, то порядковый номер
+компьютера в сети равен_____</span></span></span></span></span><br style="color: rgb(0, 0, 0);">
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"></span></span></span></span></span></span><br>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+4 </span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В
+терминологии
+сетей TCP/IP маской сети называют двоичное число, которое показывает,
+какая часть IP-адреса узла сети относится к адресу сети, а какая
+&ndash; к адресу узла в этой сети. Адрес сети получается в
+результате применения поразрядной конъюнкции к заданному адресу сети и
+его маске. По заданным IP-адресу сети и маске определите адрес сети:</span></span>
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">IP-адрес:
+217.16.246.2 Маска: 255.255.252.0</span></span></p>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">При записи ответа
+выберите из приведенных в таблице чисел 4 фрагмента четыре элемента
+IP-адреса и запишите в нужном порядке соответствующие им буквы без
+точек.</span></span></p>
+
+</span></span></span></span></div>
+
+<span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+<table style="text-align: left; width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">C</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">232</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">248</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">3</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">238</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">148</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Пример. Пусть
+искомый адрес сети 192.168.128.0 и дана таблица</span></span></p>
+
+<table style="text-align: left; width: 60%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" border="2" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">A </span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">B</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">С</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">D</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">E</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">F</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">G</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">H</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">128</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">168</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">255</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">127</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">0</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">17</span></span></strong></p>
+
+      </td>
+
+      <td>
+      <p style="text-align: center;"><strong><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">192</span></span></strong></p>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin: 0cm 0pt 0.0001pt 40.95pt; text-align: justify; text-indent: -18pt; line-height: 200%; background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">В этом случае
+правильный ответ будет HBAF.</span></span><br>
+
+<a name="Решение_примера_3"></a><a href="#%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80_3:">Решение
+примера 3</a><span style="line-height: 150%; font-family: Arial,sans-serif; color: black;"><span style="font-family: Arial;"><span style="font-size: 16px;"><span style="font-weight: bold;"></span></span></span></span></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Адрес
+сети получается
+в результате поразрядной конъюнкции чисел маски и чисел адреса узла (в
+двоичном
+коде). Конъюнкция 0 с любым числом всегда равна 0, а конъюнкция 255</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+(8 единиц в двоичной
+системе) с любым числом равна этому числу.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">IP-адрес
+узла:<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>218.137.218.137<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Маска:<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>255.255.248.0<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Значит,
+первые два
+числа адреса сети останутся такими же, как у IP-адрес узла, а последнее
+число
+будет 0. Нам осталось провести поразрядную конъюнкцию двоичной записи
+чисел 218
+и 248.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">248</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 11111000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">218</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">10</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 11011010</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);"><o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Результатом
+конъюнкции
+является число 11011000</span><sub><span style="font-size: 9pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">2</span></sub><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">
+= 216.<o:p></o:p></span></font></p>
+
+<p class="MsoNormal" style="background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify; text-indent: 35.45pt; line-height: normal;"><font size="+1"><span style="font-size: 12pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(33, 37, 41);">Сопоставим
+варианты
+ответа получившимся числам: 218, 137, 216, 0.<o:p></o:p></span></font></p>
+
+<p style="background-color: rgb(255, 255, 255);"><font size="+1"><span style="">Ответ:
+CEDH</span></font></p>
+
+<p style="background-color: rgb(255, 255, 255);"><a href="#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80_4._%D0%9E%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BC%D0%B0%D1%81%D0%BA%D0%B8_%D1%81%D0%B5%D1%82%D0%B8"><font size="+1"><span style="">Назад
+к примеру 4</span></font></a></p>
+
+</span></span>
+</span></span></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="box sheet">
+<div class="box-body sheet-body">
+<div class="layout-wrapper">
+<div class="content-layout">
+<div class="content-layout-row">
+<div class="layout-cell content">
+<div class="box post">
+<div class="box-body post-body">
+<div class="post-inner article"><br>
+
+<div class="cleared"></div>
+
+</div>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cleared"></div>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<div class="footer-body">
+<div class="footer-center">
+<div class="footer-wrapper">
+<div class="footer-text">
+<p style="text-align: center;"><a href="#">В
+начало </a></p>
+
+<p style="text-align: center;"><span style="color: rgb(11, 36, 50); font-family: Arial,Helvetica,sans-serif;">Елена
+Анатольевна Гордеева</span></p>
+
+<p style="text-align: center;"><span style="color: rgb(11, 36, 50); font-family: Arial,Helvetica,sans-serif;">2022</span></p>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+<div class="cleared"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="height: 30px;"></div>
+<div id="topNubex"><img style="border: 0px solid ; width: 71px; height: 30px;" alt="" src="../images/topNubex.jpg"></div>
+
+</div>
+
+</div>
+</body>
+</html>
